@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> -->
     <!-- cdn -->
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/home.css">
+    <!-- <link rel="stylesheet" href="<?php //echo BASE_URL; ?>css/home.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,8 +49,8 @@
 
           <h1 style="color: #2c3e50 ; color:white; font-family: 'rubik', sans-serif;" >Stay Safe, <span style="color: #71a7ed;">Stay</span> Healthly.</h1>
           <h1 style="color: #2c3e50;  color:white; font-family: 'rubik', sans-serif;">Caring For Your Life.</h1>
-          <a href="<?php echo BASE_URL; ?>register"><button type="button" class="btn" style="background-color: #0882ea; color:white; margin-top:20px;  font-family: 'rubik', sans-serif;">Get Started</button></a>
-        </div>
+          <a href="<?php //echo BASE_URL; ?>register"><button type="button" class="btn" style="background-color: #0882ea; color:white; margin-top:20px;  font-family: 'rubik', sans-serif;">Get Started</button></a>
+        </div> -->
      <!-- <section>
      <div class="container">
 		<h3 class="h3-w3l">about us</h3>
@@ -66,10 +66,10 @@
      </section> -->
 
 
-  </body>
+  <!-- </body>
 
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->

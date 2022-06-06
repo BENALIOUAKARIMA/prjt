@@ -1,4 +1,4 @@
-
+/* body */
 #one .card-body p{
     color: #7e91a0;
 }
@@ -20,6 +20,7 @@
     background-color: #009ec5;
     border-radius: 10px;
 }
+/* doctor */
 #team{
     display: flex;
     justify-content: center;
@@ -57,7 +58,7 @@
     top: -60px;
     left: 20px;
     z-index: 1;
-    box-shadow: 0 50px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
 
 }
 #con .card .imgBx img{
@@ -65,7 +66,6 @@
     border-radius: 4px;
 }
 #con .card .content{
-    position: relative;
     margin-top: -140px;
     padding: 10px 15px;
     text-align: center;
@@ -79,70 +79,50 @@
     opacity: 1;
     margin-top: -40px;
 }
-#twocon{
-    font-family: poppins;
-    /* margin-top: 10%; */
+/* contact */
+
+#first_input{
+    background:transparent !important;
+    border:none;
+    border-bottom: 1px solid #fff;
+    font-size:13px;
+    padding: 10px 12px;
 }
-.img-text{
-    width: 100%;
-    height: 300px;
-    display: block;
-    align-items: center;
-    padding: 40% 5%;
-    background: #262626;
-    color: #fff;
-    border-radius: 15px;
+#second_input{
+    background:transparent !important;
+    border:none;
+    border-bottom: 1px solid #fff;
+    font-size:13px;
+    padding: 10px 12px;
 }
-.img-text h2{
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;  
+#three_input{
+    background:transparent !important;
+    border:none;
+    border-bottom: 1px solid #fff;
+    font-size:13px;
+    padding: 10px 12px;
 }
-.img-text p{
-    font-size: 14px;
+#four_input{
+    background:transparent !important;
+    border:none;
+    border-bottom: 1px solid #fff;
+    font-size:13px;
+    padding: 10px 12px;
 }
-.single-box{
-    position: relative;
-    margin-bottom: 30px;
+#five_input{
+    background:transparent !important;
+    border:none;
+    border-bottom: 1px solid #fff;
 }
-.img-area{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: 5px solid #fff;
-    overflow: hidden;
-    top: 15px;
-    left: 125px;
-    border-radius: 50%;
-}
-.img-area img{
-    width: 100%;
-}
-.carousel-indicators{
-    left: 0;
-    top: auto;
-    bottom: -70px;
-
-}
-.carousel-indicators li{
-    background: #000;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-}
-
-.carousel-indicators .active{
-    background: #fff;
-}
-
-
-
-
-
-
-
-
-
+/* 
+#karima{
+    background-color: black !important;
+    box-shadow: 10px 10px 20px white !important;
+    opacity: 0.5 !important;
+    position: fixed;
+    min-width: 1403px !important;
+} */
+/* //////////carousl/////////// */
 
 
 @media (max-width : 992px) {
@@ -152,3 +132,4 @@
         height: 100vh;
     }
 }
+

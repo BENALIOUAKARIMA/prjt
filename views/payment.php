@@ -6,11 +6,11 @@
 // $malades = $data->getAllMalades(); // recuperer les malades
 
 if (isset($_POST['find'])) {
-    $data = new MaladeController();
-    $malades = $data->findMalades();
+    $data = new PaymentController();
+    $malades = $data->findPay();
 }else {
-    $data = new MaladeController();
-    $malades = $data->getAllMalades();
+    $data = new PaymentController();
+    $malades = $data->getAllPay();
 }
 ?>
 
@@ -29,53 +29,40 @@ if (isset($_POST['find'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body style="background-image:url(img/banner.jpg); background-size: cover;
-    background-attachment: fixed;">
+<body style="background-image:url(img/jiu.jpg); background-size: cover; background-attachment: fixed;">
 
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand mx-3" href="#" style=" font-family: 'rubik', sans-serif;"><span style="color: #71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link" style="font-family: 'rubik', sans-serif;">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-3" href="#service" style="font-family: 'rubik', sans-serif;">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-3" href="#poste" style="font-family: 'rubik', sans-serif;">Poste</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link me-3" href="#contact" style="font-family: 'rubik', sans-serif;">Contact</a>
-            </li>
-
-          </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="margin-left: 30px;"><span style="color: #0c96f1;">H</span>ealth<span style="color:#0c96f1;">C</span>are</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="<?php //echo BASE_URL; ?>index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php //echo BASE_URL; ?>facility">Facility</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="margin-right:40px ;" href="<?php echo BASE_URL; ?>register">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-       <h1 class="text-center my-5"><span style="color:#0c96f1">'</span> Liste Des Malades <span style="color:#0c96f1">'</span></h1>
-    <a class="btn btn-sm btn-primary" href="<?php echo BASE_URL; ?>add">
+    <h1 class="text-center my-3"><span style="color:#0c96f1">'</span> Payment Des Malades <span style="color:#0c96f1">'</span></h1>
+    <a class="btn btn-sm btn-primary" href="<?php echo BASE_URL; ?>addpay">
 <i class="fas fa-plus"></i>
 <!-- pour retour lhome -->
 
-<a href="<?php echo BASE_URL;?>" class="btn btn-sm btn-secondary mx-2">
-<i class="fas fa-home"></i>
-</a>
+<a href="<?php echo BASE_URL;?>" class="btn btn-sm btn-secondary mx-2"><i class="fas fa-home"></i></a>
 
 <?php
 include ('./views/includes/alerts.php');
 ?>
- <a href="<?php echo BASE_URL;?>logout" title="deconnexion" class="btn btn-sm btn-link mx-2"> 
-<i class="fas fa-user mr-2"> <?php echo $_SESSION['name'];?></i>
-</a>
+ <a href="<?php echo BASE_URL;?>logout" title="deconnexion" class="btn btn-sm btn-link mx-2"> <i class="fas fa-user mr-2"> <?php echo $_SESSION['name'];?></i></a>
 
 <form class="d-flex flex-row" style="float: right;" method="POST">
     <input type="text" class="form-control" name="search" placeholder="recherche">
@@ -88,7 +75,7 @@ include ('./views/includes/alerts.php');
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">Phone</th>
-            <th scope="col">Type de malade</th>
+            <th scope="col">montant</th>
             <th scope="col">Date</th>
             <th scope="col">Action</th>
         </tr>
@@ -102,15 +89,15 @@ include ('./views/includes/alerts.php');
                 <th scope="row"><?php echo $malade['name'];?></th>
                 <td><?php echo $malade['email'];?></td>
                 <td><?php echo $malade['phone'];?></td>
-                <td><?php echo $malade['type'];?></td >
+                <td><?php echo $malade['montant'];?></td >
                 <td><?php echo $malade['date'];?></td>
                 <td class="d-flex flex-row">
-                    <form method="POST" action="update">
+                    <form method="POST" action="updatepay">
                         <!-- envoyer id de malade pour modifier et envoyer dans la page de modification -->
                         <input type="hidden" name="id" value="<?php echo $malade['id'];?>"> 
                         <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i></button>
                     </form>
-                    <form method="POST" action="delete">
+                    <form method="POST" action="deletepay">
                         <!-- envoyer id de malade pour modifier et envoyer dans la page de modification -->
                         <input type="hidden" name="id" value="<?php echo $malade['id'];?>"> 
                         <button class="btn btn-sm btn-danger mx-2"><i class="fa fa-trash"></i></button>

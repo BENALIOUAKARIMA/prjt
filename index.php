@@ -9,7 +9,7 @@ $home = new HomeConroller();  //instensi obj mn class homecontroller et appeler 
 
 // pour afficher les pages 3la 7ssab url li 3andi ghada ndir variable 3ibara 3la array li fih les pages dyali
  
-$pages = ['index' , 'register' , 'login' , 'facility' , 'poste' , 'home', 'add', 'update', 'delete', 'logout']; 
+$pages = ['index' , 'register' , 'login' , 'facility' , 'poste' , 'payment' , 'home', 'add', 'addpay','appointement', 'updatepay', 'update', 'delete', 'deletepay', 'logout']; 
 
 if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) { // ila kan mlogi 3ad dir liya hadchi //3ad dkhol
     //pour tester les page ghadi nkhadmo be variable li 3andna fe function li fe controller
@@ -40,7 +40,7 @@ require_once './views/includes/footer.php';
 }elseif(isset($_GET['page']) && $_GET['page'] === 'register'){ // user non connecter tester page bach n2afichi page iscription
     $home->index('register'); // affichi register
 }else{
-    $home->index('index'); //sir mobachara index
+    $home->index('login'); //sir mobachara index
 
 }
 
