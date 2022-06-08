@@ -114,16 +114,58 @@
     border:none;
     border-bottom: 1px solid #fff;
 }
-/* 
-#karima{
-    background-color: black !important;
-    box-shadow: 10px 10px 20px white !important;
-    opacity: 0.5 !important;
-    position: fixed;
-    min-width: 1403px !important;
-} */
-/* //////////carousl/////////// */
+/* ////////////// team////////////// */
 
+.img-text{
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #262626;
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 130px;
+}
+.img-text h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.img-text p{
+    font-size: 14px;
+}
+.single-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+.img-area{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    top: 15px;
+    left: 150px;
+    border-radius: 50%;
+}
+.img-area img{
+    width: 100%;
+}
+.carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -70px;
+}
+.carousel-indicators li{
+    background: #000;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.carousel-indicators .active{
+    background: #fff;
+}
 
 @media (max-width : 992px) {
     .back {
@@ -133,3 +175,12 @@
     }
 }
 
+
+@media (max-width : 992px) {
+    #post_1{
+        display: block !important;
+    }
+    #post_2{
+        display: none !important;
+    }
+}

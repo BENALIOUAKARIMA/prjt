@@ -9,7 +9,7 @@ $home = new HomeConroller();  //instensi obj mn class homecontroller et appeler 
 
 // pour afficher les pages 3la 7ssab url li 3andi ghada ndir variable 3ibara 3la array li fih les pages dyali
  
-$pages = ['index' , 'register' , 'login' , 'facility' , 'poste' , 'payment' , 'home', 'add', 'addpay','appointement', 'updatepay', 'update', 'delete', 'deletepay', 'logout']; 
+$pages = ['index' , 'register' , 'login' , 'poste' , 'payment' , 'home', 'add', 'addpay','appointement','tableappointement', 'updatepay','updateapp', 'update', 'delete', 'deletepay','profile', 'logout']; 
 
 if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) { // ila kan mlogi 3ad dir liya hadchi //3ad dkhol
     //pour tester les page ghadi nkhadmo be variable li 3andna fe function li fe controller
