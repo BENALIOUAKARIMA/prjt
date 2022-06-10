@@ -2,7 +2,7 @@
 if (isset($_POST['submit'])) {
     $creatUser = new AppController();
     $creatUser->Appointement();
-} 
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 
 <body>
   <!-- ///////// navbar//////////// -->
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #009ec5;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #003580;">
       <div class="container-fluid">
         <a class="navbar-brand mx-3" href="#" style="color:white; font-size:30px;  font-family: 'rubik', sans-serif;"><span style="color: #71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,30 +34,22 @@ if (isset($_POST['submit'])) {
         <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="" class="nav-link" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Home</a>
+              <a  href="<?php echo BASE_URL; ?>index" class="nav-link" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">About</a>
+              <a class="nav-link me-3"  href="<?php echo BASE_URL; ?>profile" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3" href="#service" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Service</a>
+              <button class="nav-link rounded" style="color: white; background-color:#71a7ed; font-size:20px;  font-family: 'rubik', sans-serif;">Appointement</button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link me-3" href="#poste" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Poste</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link me-3" href="#contact" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Contact</a>
-            </li>
-
           </ul>
         </div>
       </div>
     </nav>
 
   <!-- ///////////////// start section ///////////////// -->
-  <section style="background-color:#009ec5;">
-    <h1 class="text-center p-3" style="color:#003580;" id="contact">Make an appointment</h1>
+  <section style="background-color:#003580;">
+    <h1 class="text-center p-3" style="color:#009ec5;" id="contact">Make an appointment</h1>
     <?php include('./views/includes/alerts.php'); ?>
 
     <div class="container">
@@ -79,18 +71,18 @@ if (isset($_POST['submit'])) {
             <div class="mb-5">
               <input type="date" id="five_input" name="date" class="form-control" id="exampleInputPassword1" placeholder="MM/DD/YYYY" required style="color: white;">
             </div>
-            <button type="submit" name="submit" class="btn btn" style="background-color:#003580; color:white; margin-bottom:60px;">SEND</button>
+            <button type="submit" name="submit" class="btn btn" style="background-color:#009ec5; color:white; margin-bottom:60px;">SEND</button>
           </form>
         </div>
         <div class="col-1">
         </div>
         <div class="col-sm-5">
           <h2 class="text-center" style="color: white;">Better health Care</h2>
-          <p class="mt-4" style="color:#464b4e;">"Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industriescommon name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often ,"</p>
+          <p class="mt-4" style="color:#7e91a0;">"Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industriescommon name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often ,"</p>
           <div class="mt-5">
-            <p style="color:#003580;"><i class="bi bi-geo-alt-fill" style="color: white;"></i> 756 Place, El Jadida.</p>
-            <p style="color:#003580;"><i class="bi bi-envelope-fill" style="color: white;"></i> gmail@exemple.com</p>
-            <p style="color:#003580;"><i class="bi bi-telephone-fill" style="color: white;"></i> +212 666378292</p>
+            <p style="color:#009ec5;"><i class="bi bi-geo-alt-fill" style="color: white;"></i> 756 Place, El Jadida.</p>
+            <p style="color:#009ec5;"><i class="bi bi-envelope-fill" style="color: white;"></i> gmail@exemple.com</p>
+            <p style="color:#009ec5;"><i class="bi bi-telephone-fill" style="color: white;"></i> +212 666378292</p>
           </div>
           <div class="mt-5 mb-5">
             <i class="bi bi-facebook me-3" style="color:white;"></i>

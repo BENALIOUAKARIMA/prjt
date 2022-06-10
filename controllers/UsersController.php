@@ -2,6 +2,7 @@
 
 class UsersController
 {
+public $role;
 
   public function log()
   {
@@ -11,14 +12,18 @@ class UsersController
       if ($result->email === $_POST['email'] && $result->password === $_POST['password']) {
         $_SESSION['logged'] = true;
         $_SESSION['name'] = $result->name;
-        Redirect::to('home');
+        if ($this->role=='admin') {
+          header('location:home');
+      }
+      if ($this->role=='user') {
+        header('location:appointement');
+    }
       } else {
-        Session::set('error','email or password incorect');
+        Session::set('error', 'email or password incorect');
         Redirect::to('login');
-
       }
     }
-}
+  }
 
 
   public function register()
@@ -39,15 +44,16 @@ class UsersController
       $result = User::creatUser($data);
       if ($result === 'ok') {
         Session::set('success', 'the account has been created');
+        
         Redirect::to('login');
       } else {
         echo $result;
       }
     }
- }
+  }
 
- static public function logout()
- {
-  session_destroy(); //vider la session
- }
+  static public function logout()
+  {
+    session_destroy(); //vider la session
+  }
 }

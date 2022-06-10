@@ -48,7 +48,7 @@
         </div>
       </div>
     </nav>
-<!-- //////////////////// start section //////////////////////////////////////// -->
+    <!-- //////////////////// start section //////////////////////////////////////// -->
     <section class="login py-5 mx-3">
       <div class="container-fluid">
         <div class="row">
@@ -63,8 +63,8 @@
     </section>
 
   </div>
-  
-  
+
+
   <section id="about">
     <div class="text-center">
       <h1 class="pt-5" style="color:#009ec5; font-family: 'rubik', sans-serif;" id="about">About</h1>
@@ -101,334 +101,332 @@
         </div>
       </div>
     </div>
-    </section>
-    <!-- /////////////////////// Service ///////////////////////////// -->
-    <section style="background-color: #003580;">
-      <h1 class="text-center pt-3" style="color: white;" id="service">SERVICES</h1>
-      <h3 class="text-center m-3" style="font-family: 'rubik', sans-serif; color:#009ec5;">The Skill To Heal.The Spirit To Care</h3>
-      <p class="text-center" style="color: #7e91a0;">Lorem ipsum dolor sit amet consectetur adipisicing elit Quae aperiam deserunt voluptatem ad hic distinctio eum laudantium et
-        <br> porro unde velit obcaecati, ab quos, at non exercitationem magnam accusamus suscipit?
-      </p>
-      <div style="background-image: url(./img/k.jpg);height:70vh;" class="d-block mx-auto w-75">
-        <h3 class="text-center py-5" style="color: white; font-family: 'rubik', sans-serif;">HOPE LIVES HERE</h3>
-        <a href="<?php echo BASE_URL; ?>appointement" style="text-decoration: none;"><button type="button" class="btn btn-info d-block mx-auto" style="color:white;">Get Appointement</button></a>
-
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="row py-5">
-            <div class="col-sm-3 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <span class="fa fa-star-o sicon" aria-hidden="true" style="font-size: 40px; color:#009ec5;"></span>
-                  <p class="card-text fw-bold fs-5" style="color:#003580; font-family: 'rubik', sans-serif;"><span class="fw-bold" style="color:black;">01</span> SERVICE 1</p>
-                  <p class="card-text">Operating room</p>
-                </div>
+  </section>
+  <!-- /////////////////////// Service ///////////////////////////// -->
+  <section style="background-color: #003580;">
+    <h1 class="text-center pt-3" style="color: white;" id="service">SERVICES</h1>
+    <h3 class="text-center m-3" style="font-family: 'rubik', sans-serif; color:#009ec5;">The Skill To Heal.The Spirit To Care</h3>
+    <p class="text-center" style="color: #7e91a0;">Lorem ipsum dolor sit amet consectetur adipisicing elit Quae aperiam deserunt voluptatem ad hic distinctio eum laudantium et
+      <br> porro unde velit obcaecati, ab quos, at non exercitationem magnam accusamus suscipit?
+    </p>
+    <div style="background-image: url(./img/k.jpg);height:70vh;" class="d-block mx-auto w-75">
+      <h3 class="text-center py-5" style="color: white; font-family: 'rubik', sans-serif;">HOPE LIVES HERE</h3>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="row py-5">
+          <div class="col-sm-3 mt-2">
+            <div class="card">
+              <div class="card-body">
+                <span class="fa fa-star-o sicon" aria-hidden="true" style="font-size: 40px; color:#009ec5;"></span>
+                <p class="card-text fw-bold fs-5" style="color:#003580; font-family: 'rubik', sans-serif;"><span class="fw-bold" style="color:black;">01</span> SERVICE 1</p>
+                <p class="card-text">Operating room</p>
               </div>
             </div>
-            <div class="col-sm-3 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <span class="fa fa-plus-circle sicon" aria-hidden="true" style="font-size: 40px; color:#009ec5;"></span>
-                  <p class="card-text fw-bold fs-5" style="color:#003580; font-family: 'rubik', sans-serif;"><span class="fw-bold" style="color:black;">02</span> SERVICE 2</p>
-                  <p class="card-text">Dental surgery</p>
-                </div>
+          </div>
+          <div class="col-sm-3 mt-2">
+            <div class="card">
+              <div class="card-body">
+                <span class="fa fa-plus-circle sicon" aria-hidden="true" style="font-size: 40px; color:#009ec5;"></span>
+                <p class="card-text fw-bold fs-5" style="color:#003580; font-family: 'rubik', sans-serif;"><span class="fw-bold" style="color:black;">02</span> SERVICE 2</p>
+                <p class="card-text">Dental surgery</p>
               </div>
             </div>
-            <div class="col-sm-3 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <span class="fa fa-heartbeat sicon" aria-hidden="true" style="font-size: 40px; color:#009ec5;"></span>
-                  <p class="card-text fw-bold fs-5" style="color:#003580; font-family: 'rubik', sans-serif;"><span class="fw-bold" style="color:black;">03</span> SERVICE 3</p>
-                  <p class="card-text">Neurosurgery</p>
-                </div>
+          </div>
+          <div class="col-sm-3 mt-2">
+            <div class="card">
+              <div class="card-body">
+                <span class="fa fa-heartbeat sicon" aria-hidden="true" style="font-size: 40px; color:#009ec5;"></span>
+                <p class="card-text fw-bold fs-5" style="color:#003580; font-family: 'rubik', sans-serif;"><span class="fw-bold" style="color:black;">03</span> SERVICE 3</p>
+                <p class="card-text">Neurosurgery</p>
               </div>
             </div>
-            <div class="col-sm-3 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <span class="fa fa-certificate sicon" aria-hidden="true" style="font-size: 40px; color:#009ec5;"></span>
-                  <p class="card-text fw-bold fs-5" style="color:#003580; font-family: 'rubik', sans-serif;"><span class="fw-bold" style="color:black;">04</span> SERVICE 4</p>
-                  <p class="card-text">Medical imaging</p>
-                </div>
+          </div>
+          <div class="col-sm-3 mt-2">
+            <div class="card">
+              <div class="card-body">
+                <span class="fa fa-certificate sicon" aria-hidden="true" style="font-size: 40px; color:#009ec5;"></span>
+                <p class="card-text fw-bold fs-5" style="color:#003580; font-family: 'rubik', sans-serif;"><span class="fw-bold" style="color:black;">04</span> SERVICE 4</p>
+                <p class="card-text">Medical imaging</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ////////////////// Doctor ///////////////// -->
-     <section style="background-color: #009ec5; display: none;" id="post_1">
-      <h1 class="text-center pt-5" style="color:#fff;" id="poste">DOCTOR</h1>
-      <div id="team">
-        <div class="container" id="con">
-          <div class="card">
-            <div class="imgBx">
-              <img src="img/81.jpg" alt="">
-            </div>
-            <div class="content">
-              <h2>card one</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Illo cum accusamus unde officia quam,
-                architecto atque nulla in sunt,
-                expedita doloremque consequuntur veritatis nemo!
-                Natus sapiente ipsam vitae eius doloremque? </p>
-
-            </div>
+    </div>
+  </section>
+  <!-- ////////////////// Doctor ///////////////// -->
+  <section style="background-color: #009ec5; display: none;" id="post_1">
+    <h1 class="text-center pt-5" style="color:#fff;" id="poste">DOCTOR</h1>
+    <div id="team">
+      <div class="container" id="con">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/81.jpg" alt="">
           </div>
-          <div class="card">
-            <div class="imgBx">
-              <img src="img/ta2.jpg" alt="">
-            </div>
-            <div class="content">
-              <h2>card one</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Illo cum accusamus unde officia quam,
-                architecto atque nulla in sunt,
-                expedita doloremque consequuntur veritatis nemo!
-                Natus sapiente ipsam vitae eius doloremque? </p>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="imgBx">
-              <img src="img/ta3.jpg" alt="">
-            </div>
-            <div class="content">
-              <h2>card one</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Illo cum accusamus unde officia quam,
-                architecto atque nulla in sunt,
-                expedita doloremque consequuntur veritatis nemo!
-                Natus sapiente ipsam vitae eius doloremque? </p>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="imgBx">
-              <img src="img/assistante.jpg" alt="">
-            </div>
-            <div class="content">
-              <h2>card one</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Illo cum accusamus unde officia quam,
-                architecto atque nulla in sunt,
-                expedita doloremque consequuntur veritatis nemo!
-                Natus sapiente ipsam vitae eius doloremque? </p>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="imgBx">
-              <img src="img/big.jpg" alt="">
-            </div>
-            <div class="content">
-              <h2>card one</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Illo cum accusamus unde officia quam,
-                architecto atque nulla in sunt,
-                expedita doloremque consequuntur veritatis nemo!
-                Natus sapiente ipsam vitae eius doloremque? </p>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="imgBx">
-              <img src="img/doc.jpg" alt="">
-            </div>
-            <div class="content">
-              <h2>card one</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Illo cum accusamus unde officia quam,
-                architecto atque nulla in sunt,
-                expedita doloremque consequuntur veritatis nemo!
-                Natus sapiente ipsam vitae eius doloremque? </p>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="imgBx">
-              <img src="img/doctor4.jpg" alt="">
-            </div>
-            <div class="content">
-              <h2>card one</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Illo cum accusamus unde officia quam,
-                architecto atque nulla in sunt,
-                expedita doloremque consequuntur veritatis nemo!
-                Natus sapiente ipsam vitae eius doloremque? </p>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="imgBx">
-              <img src="img/doc3.jpg" alt="">
-            </div>
-            <div class="content">
-              <h2>card one</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Illo cum accusamus unde officia quam,
-                architecto atque nulla in sunt,
-                expedita doloremque consequuntur veritatis nemo!
-                Natus sapiente ipsam vitae eius doloremque? </p>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="imgBx">
-              <img src="img/doctor-1.jpg" alt="">
-            </div>
-            <div class="content">
-              <h2>card two</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Illo cum accusamus unde officia quam,
-                architecto atque nulla in sunt,
-                expedita doloremque consequuntur veritatis nemo!
-                Natus sapiente ipsam vitae eius doloremque? </p>
-
-            </div>
+          <div class="content">
+            <h2>card one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Illo cum accusamus unde officia quam,
+              architecto atque nulla in sunt,
+              expedita doloremque consequuntur veritatis nemo!
+              Natus sapiente ipsam vitae eius doloremque? </p>
 
           </div>
         </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/ta2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>card one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Illo cum accusamus unde officia quam,
+              architecto atque nulla in sunt,
+              expedita doloremque consequuntur veritatis nemo!
+              Natus sapiente ipsam vitae eius doloremque? </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/ta3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>card one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Illo cum accusamus unde officia quam,
+              architecto atque nulla in sunt,
+              expedita doloremque consequuntur veritatis nemo!
+              Natus sapiente ipsam vitae eius doloremque? </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/assistante.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>card one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Illo cum accusamus unde officia quam,
+              architecto atque nulla in sunt,
+              expedita doloremque consequuntur veritatis nemo!
+              Natus sapiente ipsam vitae eius doloremque? </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/big.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>card one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Illo cum accusamus unde officia quam,
+              architecto atque nulla in sunt,
+              expedita doloremque consequuntur veritatis nemo!
+              Natus sapiente ipsam vitae eius doloremque? </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/doc.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>card one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Illo cum accusamus unde officia quam,
+              architecto atque nulla in sunt,
+              expedita doloremque consequuntur veritatis nemo!
+              Natus sapiente ipsam vitae eius doloremque? </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/doctor4.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>card one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Illo cum accusamus unde officia quam,
+              architecto atque nulla in sunt,
+              expedita doloremque consequuntur veritatis nemo!
+              Natus sapiente ipsam vitae eius doloremque? </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/doc3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>card one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Illo cum accusamus unde officia quam,
+              architecto atque nulla in sunt,
+              expedita doloremque consequuntur veritatis nemo!
+              Natus sapiente ipsam vitae eius doloremque? </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/doctor-1.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>card two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Illo cum accusamus unde officia quam,
+              architecto atque nulla in sunt,
+              expedita doloremque consequuntur veritatis nemo!
+              Natus sapiente ipsam vitae eius doloremque? </p>
+
+          </div>
+
+        </div>
       </div>
-    </section>
-<!-- ///////////////////////// team admin //////////////////////// -->
-<section style=" background: linear-gradient(-100deg,white 50%, #009ec5 50%); height: 70vh; font-size: poppins; height: 90vh;" id="post_2">
+    </div>
+  </section>
+  <!-- ///////////////////////// team admin //////////////////////// -->
+  <section style=" background: linear-gradient(-100deg,white 50%, #009ec5 50%); height: 70vh; font-size: poppins; height: 90vh;" id="post_2">
     <!-- <h1 class="text-center" id="poste">Team</h1> -->
 
-<div class="container" id="poste">
-    <div class="row">
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-<ol class="carousel-indicators">
-    <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
-    <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
-</ol>
-  <div class="carousel-inner">
-              <div class="carousel-item active">
-                 <div class="row">
-                   <div class="col-sm-4">
-                     <div class="single-box">
-                       <div class="img-area"><img src="img/t1.jpg" alt="" srcset=""></div>
-                       <div class="img-text">
-                         <h2>person one</h2>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
-                       </div>
-                     </div>
+    <div class="container" id="poste">
+      <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="single-box">
+                    <div class="img-area"><img src="img/t1.jpg" alt="" srcset=""></div>
+                    <div class="img-text">
+                      <h2>person one</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                    </div>
+                  </div>
 
-                   </div>
-                   <div class="col-sm-4">
-                     <div class="single-box">
-                       <div class="img-area"><img src="img/t2.jpg" alt="" srcset=""></div>
-                       <div class="img-text">
-                         <h2>person two</h2>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
-                       </div>
-                     </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="single-box">
+                    <div class="img-area"><img src="img/t2.jpg" alt="" srcset=""></div>
+                    <div class="img-text">
+                      <h2>person two</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                    </div>
+                  </div>
 
-                   </div>
-                   <div class="col-sm-4">
-                     <div class="single-box">
-                       <div class="img-area"><img src="img/t3.jpg" alt="" srcset=""></div>
-                       <div class="img-text">
-                         <h2>person three</h2>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
-                       </div>
-                     </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="single-box">
+                    <div class="img-area"><img src="img/t3.jpg" alt="" srcset=""></div>
+                    <div class="img-text">
+                      <h2>person three</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                    </div>
+                  </div>
 
-                   </div>
-                 </div>
+                </div>
+              </div>
             </div>
-              <div class="carousel-item ">
-                 <div class="row">
-                   <div class="col-sm-4">
-                     <div class="single-box">
-                       <div class="img-area"><img src="img/t4.jpg" alt="" srcset=""></div>
-                       <div class="img-text">
-                         <h2>person one</h2>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
-                       </div>
-                     </div>
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="single-box">
+                    <div class="img-area"><img src="img/t4.jpg" alt="" srcset=""></div>
+                    <div class="img-text">
+                      <h2>person one</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                    </div>
+                  </div>
 
-                   </div>
-                   <div class="col-sm-4">
-                     <div class="single-box">
-                       <div class="img-area"><img src="img/t1.jpg" alt="" srcset=""></div>
-                       <div class="img-text">
-                         <h2>person two</h2>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
-                       </div>
-                     </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="single-box">
+                    <div class="img-area"><img src="img/t1.jpg" alt="" srcset=""></div>
+                    <div class="img-text">
+                      <h2>person two</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                    </div>
+                  </div>
 
-                   </div>
-                   <div class="col-sm-4">
-                     <div class="single-box">
-                       <div class="img-area"><img src="img/t2.jpg" alt="" srcset=""></div>
-                       <div class="img-text">
-                         <h2>person three</h2>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
-                       </div>
-                     </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="single-box">
+                    <div class="img-area"><img src="img/t2.jpg" alt="" srcset=""></div>
+                    <div class="img-text">
+                      <h2>person three</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                    </div>
+                  </div>
 
-                   </div>
-                 </div>
-            </div>
-            </div>
-  </div>
-  </section>
-      <!-- /////////////////////contact///////////////////////////////// -->
-
-    <section style="background-color:#003580;">
-      <h1 class="text-center p-5" style="color:#009ec5;" id="contact">Get In Touch</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <form>
-              <div class="mb-5">
-                <input type="text" id="first_input" name="fist" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" required>
+                </div>
               </div>
-              <div class="mb-5">
-                <input type="text" id="second_input" name="last" class="form-control" id="exampleInputPassword1" placeholder="last Name" required>
-              </div>
-              <div class="mb-5">
-                <input type="text" id="three_input" name="doctor" class="form-control" id="exampleInputPassword1" placeholder="Doctor" required>
-              </div>
-              <div class="mb-5">
-                <input type="text" id="four_input" name="service" class="form-control" id="exampleInputPassword1" placeholder="Service" required>
-              </div>
-              <div class="mb-5">
-                <input type="text" id="five_input" name="message" class="form-control" id="exampleInputPassword1" placeholder="Your Message" required>
-              </div>
-              <button type="submit" class="btn btn" style="background-color:#009ec5; color:white; margin-bottom:60px;">SEND</button>
-            </form>
-          </div>
-          <div class="col-1">
-          </div>
-          <div class="col-sm-5">
-            <h2 class="text-center" style="color: white;">Contact Information</h2>
-            <p class="mt-4" style="color:#7e91a0;">"Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industriescommon name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often ,"</p>
-            <div class="mt-5">
-              <p style="color:#009ec5;"><i class="bi bi-geo-alt-fill" style="color: white;"></i> 756 Place, El Jadida.</p>
-              <p style="color:#009ec5;"><i class="bi bi-envelope-fill" style="color: white;"></i> gmail@exemple.com</p>
-              <p style="color:#009ec5;"><i class="bi bi-telephone-fill" style="color: white;"></i> +212 678959494</p>
-            </div>
-            <div class="mt-5">
-              <i class="bi bi-facebook me-3" style="color:white;"></i>
-              <i class="bi bi-twitter me-3" style="color:white;"></i>
-              <i class="bi bi-instagram me-3" style="color:white;"></i>
-              <i class="bi bi-linkedin me-3" style="color:white;"></i>
             </div>
           </div>
         </div>
+  </section>
+  <!-- /////////////////////contact///////////////////////////////// -->
 
+  <section style="background-color:#003580;">
+    <h1 class="text-center p-5" style="color:#009ec5;" id="contact">Get In Touch</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <form>
+            <div class="mb-5">
+              <input type="text" id="first_input" name="fist" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" required>
+            </div>
+            <div class="mb-5">
+              <input type="text" id="second_input" name="last" class="form-control" id="exampleInputPassword1" placeholder="last Name" required>
+            </div>
+            <div class="mb-5">
+              <input type="text" id="three_input" name="doctor" class="form-control" id="exampleInputPassword1" placeholder="Doctor" required>
+            </div>
+            <div class="mb-5">
+              <input type="text" id="four_input" name="service" class="form-control" id="exampleInputPassword1" placeholder="Service" required>
+            </div>
+            <div class="mb-5">
+              <input type="text" id="five_input" name="message" class="form-control" id="exampleInputPassword1" placeholder="Your Message" required>
+            </div>
+            <button type="submit" class="btn btn" style="background-color:#009ec5; color:white; margin-bottom:60px;">SEND</button>
+          </form>
+        </div>
+        <div class="col-1">
+        </div>
+        <div class="col-sm-5">
+          <h2 class="text-center" style="color: white;">Contact Information</h2>
+          <p class="mt-4" style="color:#7e91a0;">"Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industriescommon name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often ,"</p>
+          <div class="mt-5">
+            <p style="color:#009ec5;"><i class="bi bi-geo-alt-fill" style="color: white;"></i> 756 Place, El Jadida.</p>
+            <p style="color:#009ec5;"><i class="bi bi-envelope-fill" style="color: white;"></i> gmail@exemple.com</p>
+            <p style="color:#009ec5;"><i class="bi bi-telephone-fill" style="color: white;"></i> +212 678959494</p>
+          </div>
+          <div class="mt-5">
+            <i class="bi bi-facebook me-3" style="color:white;"></i>
+            <i class="bi bi-twitter me-3" style="color:white;"></i>
+            <i class="bi bi-instagram me-3" style="color:white;"></i>
+            <i class="bi bi-linkedin me-3" style="color:white;"></i>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- ///////////////////////////////////footer//////////////////////////////////// -->
 
-    <footer style="background-color:#052149;">
-      <h1 class="text-center py-3" style="color: white;"><span style="color:#71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</h1>
-      <p class="text-center mb-0" style="color: white; padding-bottom: 60px;">© 2022 healthcare. All rights reserved | Design by healthcare</p>
-    </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    </div>
+  </section>
+  <!-- ///////////////////////////////////footer//////////////////////////////////// -->
+
+  <footer style="background-color:#052149;">
+    <h1 class="text-center py-3" style="color: white;"><span style="color:#71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</h1>
+    <p class="text-center mb-0" style="color: white; padding-bottom: 60px;">© 2022 healthcare. All rights reserved | Design by healthcare</p>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 

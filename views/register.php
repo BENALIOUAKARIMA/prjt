@@ -1,8 +1,11 @@
 <?php
 if (isset($_POST['submit'])) {
     $creatUser = new UsersController();
+    
     $creatUser->register();
-} 
+   
+    
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +30,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body style="background-image: url(img/ctor.jpeg);">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="margin-left: 30px;"><span style="color: #0c96f1;">H</span>ealth<span style="color:#0c96f1;">C</span>are</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +39,12 @@ if (isset($_POST['submit'])) {
             <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <!-- <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?php //echo BASE_URL; ?>index">Home</a>
+                        <a class="nav-link" aria-current="page" href="<?php //echo BASE_URL; 
+                                                                        ?>index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php //echo BASE_URL; ?>facility">Facility</a>
+                        <a class="nav-link" href="<?php //echo BASE_URL; 
+                                                    ?>facility">Facility</a>
                     </li> -->
                     <li class="nav-item">
                         <a class="nav-link active" style="margin-right:40px ;" href="<?php echo BASE_URL; ?>login">LogIn</a>
@@ -48,7 +53,7 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
     </nav>
-        <div class="d-flex justify-content-center gap-3">
+    <div class="d-flex justify-content-center gap-3">
         <div class="col-md-3 d-sm-block d-none">
             <h1 class="text-center" style="margin-top:160px;">Email</h1>
             <h2 class="text-center">Password</h2>
@@ -61,6 +66,7 @@ if (isset($_POST['submit'])) {
             <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" style="background: transparent;" required>
             <input type="password" class="form-control" name="password" id="email" placeholder="Enter your password" style="background: transparent;" required>
             <input type="password" class="form-control" name="pass" id="email" placeholder="Enter your Confirmation" style="background: transparent;" required>
+            
             <button type="submit" name="submit" class="btn btn-info mt-4 w-100" style=" font: size 20px;">SignUp <i class="bi bi-box-arrow-in-right"></i></button>
             <hr>
             <div class="mx-5 fw-bold">Have an acount?! <a class="fw-bold" href="<?php echo BASE_URL; ?>login" class="btn btn-link" style="color:#96cff5; text-decoration:none;">Login Here</a></div>
@@ -136,7 +142,8 @@ if (isset($_POST['submit'])) {
 <div class="container">
     <div class="row my-4">
         <div class="col-md-8 mx-auto">
-            <?php // include('./views/includes/alerts.php'); ?>
+            <?php // include('./views/includes/alerts.php'); 
+            ?>
             <div class="card">
                 <div class="card-header">
                     <h3 class="text-center">Inscription</h3>
@@ -159,7 +166,8 @@ if (isset($_POST['submit'])) {
 
                 </div>
                 <div class="card-footer">
-                    <a href="<?php //echo BASE_URL;?>login" class="btn btn-link">Login</a>
+                    <a href="<?php //echo BASE_URL;
+                                ?>login" class="btn btn-link">Login</a>
 
                 </div>
             </div>

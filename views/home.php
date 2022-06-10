@@ -29,9 +29,7 @@ if (isset($_POST['find'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body style="background-image:url(img/banner.jpg); background-size: cover;
-    background-attachment: fixed;">
-
+<body style="background-image:url(img/gro.jpg); background-size: cover; background-position: fixed;">
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand mx-3" href="#" style=" font-family: 'rubik', sans-serif;"><span style="color: #71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</a>
@@ -44,24 +42,26 @@ if (isset($_POST['find'])) {
               <a href="" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link" style="font-family: 'rubik', sans-serif;">About</a>
+              <a  href="<?php echo BASE_URL; ?>payment" class="nav-link" style="font-family: 'rubik', sans-serif;">Payment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3" href="#service" style="font-family: 'rubik', sans-serif;">Service</a>
+              <a class="nav-link me-3" href="<?php echo BASE_URL; ?>tableappointement" style="font-family: 'rubik', sans-serif;">Table appointemant</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link me-3" href="<?php echo BASE_URL; ?>contact" style="font-family: 'rubik', sans-serif;">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3" href="#poste" style="font-family: 'rubik', sans-serif;">Poste</a>
+              <button class="nav-link me-3 rounded" href="<?php echo BASE_URL; ?>home" style="font-family: 'rubik', sans-serif; background-color:#71a7ed; color:white">List For Patient</button>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link me-3" href="#contact" style="font-family: 'rubik', sans-serif;">Contact</a>
-            </li>
+            
 
           </ul>
         </div>
       </div>
     </nav>
-       <h1 class="text-center my-5"><span style="color:#0c96f1">'</span> Liste Des Malades <span style="color:#0c96f1">'</span></h1>
+       <h1 class="text-center my-5"><span style="color:#0c96f1">'</span> Patient <span style="color:#0c96f1">'</span></h1>
     <a class="btn btn-sm btn-primary" href="<?php echo BASE_URL; ?>add">
 <i class="fas fa-plus"></i>
 <!-- pour retour lhome -->

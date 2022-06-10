@@ -1,9 +1,11 @@
 <?php
 if (isset($_POST['submit'])) {
     $signinUser = new UsersController();
+    $signinUser->role=$_POST['role'];
     $signinUser->log();
 }
 ?>
+<!-- background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("img/univ.jpg"); -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,6 +54,11 @@ if (isset($_POST['submit'])) {
             <?php include('./views/includes/alerts.php'); ?>
             <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" style="background: transparent;">
             <input type="password" class="form-control" name="password" id="email" placeholder="Enter your password" style="background: transparent;">
+            <select class="form-select mt-3" name="role" aria-label="Default select example" style="background: transparent;">
+                <option selecte>Open this select menu</option>
+                <option value="admin">admin</option>
+                <option value="user">user</option>
+            </select>
             <input type="checkbox" class="mt-4"> <small class="fw-bold" style="font-size:17px; color:white;">Remember Me</small> <br>
             <button type="submit" name="submit" class="btn btn-info mt-4 w-100" style=" font: size 20px;">Log in <i class="bi bi-box-arrow-in-right"></i></button>
             <hr>

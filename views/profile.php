@@ -46,10 +46,10 @@
           <div class="row d-flex justify-content-center pb-5">
            <div class="col-md-10 mt-5 pt-5">
            <div class="row z-depth-3">
-             <div class="col-sm-4 bg-info rounded-left">
+             <div class="col-sm-4 rounded-left rounded" style="background-color:#052149;">
               <div class="card-block text-center text-white">
                <i class="fas fa-user-tie fa-7x mt-5"></i>
-               <h2 class="fw-bold mt-4">NIckos</h2>
+               <h2 class="fw-bold mt-4"><?php echo $_SESSION['name'];?></h2>
                <p>devloper web </p>
               </div>
              </div>
@@ -59,7 +59,7 @@
                <div class="row">
                    <div class="col-sm-6">
                        <p class="fw-bold">name:</p>
-                       <h6 class="text-muted">nick</h6>
+                       <h6 class="text-muted"><?php echo $_SESSION['name'];?></h6>
                    </div>
                    <div class="col-sm-6">
                        <p class="fw-bold">Phone:</p>
@@ -80,9 +80,9 @@
                </div>
                <hr class="bg-primary">
                 <ul class="list-unstyled d-flex justify-content-center mt-4">
-                    <li><a href=""><i class="fab fa-facebook px-3 h4 text-info"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter px-3 h4 text-info"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram px-3 h4 text-info"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook px-3 h4" style="color:#052149;"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter px-3 h4"  style="color:#052149;"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram px-3 h4"  style="color:#052149;"></i></a></li>
 
                 </ul>
              </div> 

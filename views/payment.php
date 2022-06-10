@@ -29,7 +29,7 @@ if (isset($_POST['find'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body style="background-image:url(img/jiu.jpg); background-size: cover; background-attachment: fixed;">
+<body style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.1)), url(img/argent.jpg); background-size: cover; background-attachment: fixed;">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -70,11 +70,11 @@ include ('./views/includes/alerts.php');
 </form>
 
 <table class="table my-5">
-    <thead style="color:gray;">
+    <thead>
         <tr>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
-            <th scope="col">Phone</th>
+            <th scope="col" >Phone</th>
             <th scope="col">montant</th>
             <th scope="col">Date</th>
             <th scope="col">Action</th>
@@ -89,10 +89,10 @@ include ('./views/includes/alerts.php');
                 <th scope="row"><?php echo $malade['name'];?></th>
                 <td><?php echo $malade['email'];?></td>
                 <td><?php echo $malade['phone'];?></td>
-                <td><?php echo $malade['montant'];?></td >
-                <td><?php echo $malade['date'];?></td>
+                <td ><?php echo $malade['montant'];?></td >
+                <td ><?php echo $malade['date'];?></td>
                 <td class="d-flex flex-row">
-                    <form method="POST" action="updatepay">
+                    <form method="POST" action="updatepay" >
                         <!-- envoyer id de malade pour modifier et envoyer dans la page de modification -->
                         <input type="hidden" name="id" value="<?php echo $malade['id'];?>"> 
                         <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i></button>
