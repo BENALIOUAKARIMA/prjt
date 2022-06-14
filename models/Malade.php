@@ -28,7 +28,6 @@ class Malade
     static public function add($data)
     {
         $stmt = DB::connect()->prepare('INSERT INTO liste(name, email, phone, type, date) VALUES (:name,:email,:phone,:type,:date)');
-        //bind rabt m3a les valeur li jaw
         $stmt->bindParam(':name', $data['name']);
         $stmt->bindParam(':email', $data['email']);
         $stmt->bindParam(':phone', $data['phone']);
@@ -46,7 +45,6 @@ class Malade
     static public function update($data)
     {
         $stmt = DB::connect()->prepare('UPDATE liste SET name=:name, email=:email, phone=:phone, type=:type, date=:date WHERE id=:id');
-        //bind rabt m3a les valeur li jaw
         $stmt->bindParam(':id', $data['id']);
         $stmt->bindParam(':name', $data['name']);
         $stmt->bindParam(':email', $data['email']);

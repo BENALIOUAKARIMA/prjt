@@ -28,7 +28,6 @@ class Payment
     static public function add($data)
     {
         $stmt = DB::connect()->prepare('INSERT INTO payment(name, email, phone, montant, date) VALUES (:name,:email,:phone,:montant,:date)');
-        //bind rabt m3a les valeur li jaw
         $stmt->bindParam(':name', $data['name']);
         $stmt->bindParam(':email', $data['email']);
         $stmt->bindParam(':phone', $data['phone']);
@@ -46,7 +45,6 @@ class Payment
     static public function update($data)
     {
         $stmt = DB::connect()->prepare('UPDATE payment SET name=:name, email=:email, phone=:phone, montant=:montant, date=:date WHERE id=:id');
-        //bind rabt m3a les valeur li jaw
         $stmt->bindParam(':id', $data['id']);
         $stmt->bindParam(':name', $data['name']);
         $stmt->bindParam(':email', $data['email']);

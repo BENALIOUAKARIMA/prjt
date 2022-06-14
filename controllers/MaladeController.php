@@ -1,15 +1,13 @@
 <?php
-//pour recuperer les maladies bach n2afichihom fe page
+//recuperer les maladies pour afficher dans la page
 class MaladeController{
      
-    public function getAllMalades() // recuperer ga3les malades
+    public function getAllMalades() // recuperer tout les malades
     {
         $malades = Malade::getAll();
         return $malades;
         
     }
-
-    //pour update vid 9
 
     public function getOneMalade(){
         if (isset($_POST['id'])) {
@@ -24,7 +22,7 @@ class MaladeController{
     }
 
     public function findMalades(){
-        if (isset($_POST['search'])) { //ila kant 3andi 9ima 3ad ndir recherche
+        if (isset($_POST['search'])) { //if done valeur rechercher
             $data = array('search' => $_POST['search']);
         }
         $malades = Malade::searchMalade($data);
@@ -75,7 +73,6 @@ class MaladeController{
         }
     }
 
-    //delete:: vid 11
     public function deletemalade()
     {
         if (isset($_POST['id'])) {

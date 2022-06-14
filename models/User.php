@@ -1,5 +1,5 @@
 <?php
-//hush password // criptage de password
+// criptage
 class User{
     // function de login ::
     static public function signin($data)
@@ -22,7 +22,6 @@ class User{
 
     static public function creatUser($data){
         $stmt = DB::connect()->prepare('INSERT INTO comptes(name, email, password) VALUES (:name,:email,:password)');
-        //bind rabt m3a les valeur li jaw
         $stmt ->bindParam(':name', $data['name']);
         $stmt ->bindParam(':email', $data['email']);
         $stmt ->bindParam(':password', $data['password']);

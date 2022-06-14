@@ -6,11 +6,11 @@
 // $malades = $data->getAllMalades(); // recuperer les malades
 
 if (isset($_POST['find'])) {
-    $data = new AppointementController();
-    $malades = $data->findAppointement();
+    $data = new ContactController();
+    $malades = $data->findContact();
 }else {
-    $data = new AppointementController();
-    $malades = $data->getAllAppointement();
+    $data = new ContactController();
+    $malades = $data->getAllContact();
 }
 ?>
 
@@ -29,7 +29,7 @@ if (isset($_POST['find'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body style="background-image:url(img/pat.jpg); background-size: cover; background-attachment: fixed;">
+<body style="background-image:url(img/pe.jpg); background-size: cover; background-attachment: fixed;">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -60,7 +60,7 @@ if (isset($_POST['find'])) {
         </div>
     </nav>
     <!-- ///////////////////////// start body ///////////////////// -->
-    <h1 class="text-center my-3"><span style="color:#0c96f1">'</span>List Appointment<span style="color:#0c96f1">'</span></h1>
+    <h1 class="text-center my-3"><span style="color:#0c96f1">'</span>List Contact<span style="color:#0c96f1">'</span></h1>
    
 <!-- pour retour lhome -->
 
@@ -79,12 +79,11 @@ include ('./views/includes/alerts.php');
 <table class="table my-5">
     <thead style="color:gray;">
         <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Phone</th>
+            <th scope="col">first</th>
+            <th scope="col">last</th>
+            <th scope="col">doctor</th>
             <th scope="col">Service</th>
-            <th scope="col">Date</th>
-            <th scope="col">Action</th>
+            <th scope="col">message</th>
         </tr>
     </thead>
     <tbody>
@@ -93,19 +92,12 @@ include ('./views/includes/alerts.php');
     foreach ($malades as $malade){
     ?>
      <tr>
-                <th scope="row"><?php echo $malade['name'];?></th>
-                <td><?php echo $malade['email'];?></td>
-                <td><?php echo $malade['phone'];?></td>
+                <th scope="row"><?php echo $malade['first'];?></th>
+                <td><?php echo $malade['last'];?></td>
+                <td><?php echo $malade['doctor'];?></td>
                 <td><?php echo $malade['service'];?></td >
-                <td><?php echo $malade['date'];?></td>
-                <td class="d-flex flex-row">
-                    <form method="POST" action="updateapp">
-                        <!-- envoyer id de malade pour modifier et envoyer dans la page de modification -->
-                        <input type="hidden" name="id" value="<?php echo $malade['id'];?>"> 
-                        <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i></button>
-                    </form>
-                   
-                </td>
+                <td><?php echo $malade['message'];?></td>
+                <td class="d-flex flex-row"></td>
             </tr>
 <?php
 }

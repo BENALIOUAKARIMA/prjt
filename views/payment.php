@@ -29,24 +29,31 @@ if (isset($_POST['find'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.1)), url(img/argent.jpg); background-size: cover; background-attachment: fixed;">
+<body style="background-image: url(img/heart.jpg); background-size: cover; background-attachment: fixed;">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="margin-left: 30px;"><span style="color: #0c96f1;">H</span>ealth<span style="color:#0c96f1;">C</span>are</a>
+            <a class="navbar-brand mx-3" href="#" style=" font-family: 'rubik', sans-serif;"><span style="color: #71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?php //echo BASE_URL; ?>index">Home</a>
+                        <a href="" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php //echo BASE_URL; ?>facility">Facility</a>
+                        <a href="<?php echo BASE_URL; ?>home" class="nav-link" style="font-family: 'rubik', sans-serif;">List Patient</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="margin-right:40px ;" href="<?php echo BASE_URL; ?>register">Sign Up</a>
+                        <a class="nav-link me-3" href="<?php echo BASE_URL; ?>tableappointement" style="font-family: 'rubik', sans-serif;">Table appointemant</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="<?php echo BASE_URL; ?>contact" style="font-family: 'rubik', sans-serif;">Table Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link me-3 rounded" href="<?php echo BASE_URL; ?>payment" style="font-family: 'rubik', sans-serif; background-color:#71a7ed; color:white">Payment</button>
                     </li>
                 </ul>
             </div>

@@ -376,11 +376,17 @@
   <!-- /////////////////////contact///////////////////////////////// -->
 
   <section style="background-color:#003580;">
+    <?php
+    // if (isset($_POST['send'])) {
+    //   $creatUser = new ConController();
+    //   $creatUser->Contact();
+    // }
+    ?>
     <h1 class="text-center p-5" style="color:#009ec5;" id="contact">Get In Touch</h1>
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <form>
+          <form method="POST">
             <div class="mb-5">
               <input type="text" id="first_input" name="fist" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" required>
             </div>
@@ -396,7 +402,7 @@
             <div class="mb-5">
               <input type="text" id="five_input" name="message" class="form-control" id="exampleInputPassword1" placeholder="Your Message" required>
             </div>
-            <button type="submit" class="btn btn" style="background-color:#009ec5; color:white; margin-bottom:60px;">SEND</button>
+            <button type="submit" name="send" class="btn btn" style="background-color:#009ec5; color:white; margin-bottom:60px;">SEND</button>
           </form>
         </div>
         <div class="col-1">

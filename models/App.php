@@ -1,5 +1,5 @@
 <?php
-//hush password // criptage de password
+// criptage des donner
 class App{
 
     static public function creatUser($data){

@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['submit'])) {
-    $creatUser = new AppController();
-    $creatUser->Appointement();
+    $creatUser = new ConController();
+    $creatUser->Contact();
 }
 ?>
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/home.css">
 </head>
 
-<body style="background-image:url(img/black.jpg); background-size: cover; height:100vh; overflow:hidden;">
+<body style="background-image:url(img/k.jpg); background-size: cover; height:100vh; overflow:hidden;">
   <!-- ///////// navbar//////////// -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #003580;">
       <div class="container-fluid">
@@ -40,10 +40,10 @@ if (isset($_POST['submit'])) {
               <a class="nav-link me-3"  href="<?php echo BASE_URL; ?>profile" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3"  href="<?php echo BASE_URL; ?>contact" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Contact</a>
+              <a class="nav-link me-3"  href="<?php echo BASE_URL; ?>appointement" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;"> Appointement</a>
             </li>
             <li class="nav-item">
-              <button class="nav-link rounded" style="color: white; background-color:#71a7ed; font-size:20px;  font-family: 'rubik', sans-serif;">Appointement</button>
+              <button class="nav-link rounded" style="color: white; background-color:#71a7ed; font-size:20px;  font-family: 'rubik', sans-serif;">contact the administration</button>
             </li>
           </ul>
         </div>
@@ -51,8 +51,8 @@ if (isset($_POST['submit'])) {
     </nav>
 
   <!-- ///////////////// start section ///////////////// -->
-  <section>
-    <h1 class="text-center p-3" style="color:#009ec5;" id="contact">Make an appointment</h1>
+  <section >
+    <h1 class="text-center p-3" style="color:#009ec5;" id="contact">GET IN TOUCH</h1>
     <?php include('./views/includes/alerts.php'); ?>
 
     <div class="container">
@@ -60,19 +60,19 @@ if (isset($_POST['submit'])) {
         <div class="col-sm-6">
           <form method="POST">
             <div class="mb-5">
-              <input type="text" id="first_input" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First and Last Name" required style="color: white;">
+              <input type="text" id="first_input" name="first" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" required style="color: white;">
             </div>
             <div class="mb-5">
-              <input type="email" id="second_input" name="email" class="form-control" id="exampleInputPassword1" placeholder="Email" required style="color: white;">
+              <input type="text" id="second_input" name="last" class="form-control" id="exampleInputPassword1" placeholder="Last Name" required style="color: white;">
             </div>
             <div class="mb-5">
-              <input type="number" id="three_input" name="phone" class="form-control" id="exampleInputPassword1" placeholder="phone" required style="color: white;">
+              <input type="text" id="three_input" name="doctor" class="form-control" id="exampleInputPassword1" placeholder="Doctor" required style="color: white;">
             </div>
             <div class="mb-5">
               <input type="text" id="four_input" name="service" class="form-control" id="exampleInputPassword1" placeholder="Service" required style="color: white;">
             </div>
             <div class="mb-5">
-              <input type="date" id="five_input" name="date" class="form-control" id="exampleInputPassword1" placeholder="MM/DD/YYYY" required style="color: white;">
+              <input type="text" id="five_input" name="message" class="form-control" id="exampleInputPassword1" placeholder="Message" required style="color: white;">
             </div>
             <button type="submit" name="submit" class="btn btn" style="background-color:#009ec5; color:white; margin-bottom:60px;">SEND</button>
           </form>
@@ -101,11 +101,7 @@ if (isset($_POST['submit'])) {
 
   <!-- ///////////////////////////////////footer//////////////////////////////////// -->
 
-  <footer style="background-color:#052149;">
-    <h1 class="text-center py-3" style="color: white;"><span style="color:#71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</h1>
-    <p class="text-center mb-0" style="color: white; padding-bottom: 60px;">© 2022 healthcare. All rights reserved | Design by healthcare</p>
-  </footer>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  
 
 </body>
 

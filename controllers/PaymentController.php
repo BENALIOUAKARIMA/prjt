@@ -1,15 +1,13 @@
 <?php
-//pour recuperer les maladies bach n2afichihom fe page
+//pour recuperer les maladies pour afficher dans lab page
 class PaymentController{
      
-    public function getAllPay() // recuperer ga3les malades
+    public function getAllPay() // recuperer tout les malades
     {
         $malades = Payment::getAll();
         return $malades;
         
     }
-
-    //pour update vid 9
 
     public function getOnePay(){
         if (isset($_POST['id'])) {
@@ -24,7 +22,7 @@ class PaymentController{
     }
 
     public function findPay(){
-        if (isset($_POST['search'])) { //ila kant 3andi 9ima 3ad ndir recherche
+        if (isset($_POST['search'])) { //if done valeur rechercher
             $data = array('search' => $_POST['search']);
         }
         $malades = Payment::searchPay($data);
@@ -75,7 +73,7 @@ class PaymentController{
         }
     }
 
-    //delete:: vid 11
+    
     public function deletepay()
     {
         if (isset($_POST['id'])) {

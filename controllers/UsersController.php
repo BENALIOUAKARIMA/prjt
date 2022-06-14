@@ -13,7 +13,7 @@ public $role;
         $_SESSION['logged'] = true;
         $_SESSION['name'] = $result->name;
         if ($this->role=='admin') {
-          header('location:home');
+          header('location:dashbord');
       }
       if ($this->role=='user') {
         header('location:appointement');
@@ -29,11 +29,6 @@ public $role;
   public function register()
   {
     if (isset($_POST['submit'])) {
-      //pour hush password
-      // $options = [
-      // 'cost' => 12
-      // ];
-      // $password = password_hash($_POST['password'],PASSWORD_BCRYPT,$options);
       $data = array(
         'name' => $_POST['name'],
         'email' => $_POST['email'],

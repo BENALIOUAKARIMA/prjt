@@ -1,15 +1,13 @@
 <?php
-//pour recuperer les maladies bach n2afichihom fe page
+//recuperer et afficher les malades dans la page
 class AppointementController{
      
-    public function getAllAppointement() // recuperer ga3les malades
+    public function getAllAppointement() // recuperer les malades
     {
         $malades = Appoint::getAll();
         return $malades;
         
     }
-
-    //pour update vid 9
 
     public function getOneAppointement(){
         if (isset($_POST['id'])) {
@@ -24,7 +22,7 @@ class AppointementController{
     }
 
     public function findAppointement(){
-        if (isset($_POST['search'])) { //ila kant 3andi 9ima 3ad ndir recherche
+        if (isset($_POST['search'])) { //if done valeur rechercher
             $data = array('search' => $_POST['search']);
         }
         $malades = Appoint::searchMalade($data);
@@ -43,7 +41,7 @@ class AppointementController{
                 'service' => $_POST['service'],
                 'date' => $_POST['date'],
             );
-            //function de model
+            //functionmodel
             $result = Appoint::add($data);
             if ($result === 'ok') {
                 Session::set('success','the patient has been added');
@@ -64,7 +62,7 @@ class AppointementController{
                 'service' => $_POST['service'],
                 'date' => $_POST['date'],
             );
-            //function de model 
+            //function model 
             $result = Appoint::update($data);
             if ($result === 'ok') {
                 Session::set('success','the patient has been modified');

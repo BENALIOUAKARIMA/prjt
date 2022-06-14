@@ -1,11 +1,9 @@
 <?php
 if (isset($_POST['submit'])) {
     $creatUser = new UsersController();
-    
     $creatUser->register();
-   
-    
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -20,13 +18,13 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/test.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- <script>
+    <script>
         function test() {
             if (document.getElementById('password').value != document.getElementById('pass').value) {
                 alert("Verifier le mot de passe");
             }
         }
-    </script> -->
+    </script>
 </head>
 
 <body style="background-image: url(img/ctor.jpeg);">
@@ -38,14 +36,6 @@ if (isset($_POST['submit'])) {
             </button>
             <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?php //echo BASE_URL; 
-                                                                        ?>index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php //echo BASE_URL; 
-                                                    ?>facility">Facility</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link active" style="margin-right:40px ;" href="<?php echo BASE_URL; ?>login">LogIn</a>
                     </li>
@@ -62,12 +52,12 @@ if (isset($_POST['submit'])) {
         <form method="POST" action="" class="col-md-4 px-4 h-auto" style="background-color:rgb(223, 240, 253,0.8); margin-top:40px;">
             <h3 class="text-center" style="margin-top: 55px;">Sign Up</h3>
             <?php include('./views/includes/alerts.php'); ?>
-            <input type="text" class="form-control" name="name" id="email" placeholder="Enter your name" style="background: transparent;" required>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" style="background: transparent;" required>
             <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" style="background: transparent;" required>
-            <input type="password" class="form-control" name="password" id="email" placeholder="Enter your password" style="background: transparent;" required>
-            <input type="password" class="form-control" name="pass" id="email" placeholder="Enter your Confirmation" style="background: transparent;" required>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" style="background: transparent;" required>
+            <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter your Confirmation" style="background: transparent;" required>
             
-            <button type="submit" name="submit" class="btn btn-info mt-4 w-100" style=" font: size 20px;">SignUp <i class="bi bi-box-arrow-in-right"></i></button>
+            <button type="submit" name="submit" class="btn btn-info mt-4 w-100" style=" font: size 20px;" onClick="javascript:test();">SignUp <i class="bi bi-box-arrow-in-right"></i></button>
             <hr>
             <div class="mx-5 fw-bold">Have an acount?! <a class="fw-bold" href="<?php echo BASE_URL; ?>login" class="btn btn-link" style="color:#96cff5; text-decoration:none;">Login Here</a></div>
         </form>

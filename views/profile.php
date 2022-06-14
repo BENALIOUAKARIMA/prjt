@@ -33,6 +33,9 @@
               <a href="<?php echo BASE_URL; ?>appointement" class="nav-link" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">appointement</a>
             </li>
             <li class="nav-item">
+              <a href="<?php echo BASE_URL; ?>contact" class="nav-link" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Contact</a>
+            </li>
+            <li class="nav-item">
               <button class="nav-link me-3 rounded" href="#service" style="background-color:#71a7ed; color:white; font-size:20px;  font-family: 'rubik', sans-serif;">Profile</button>
             </li>
 
