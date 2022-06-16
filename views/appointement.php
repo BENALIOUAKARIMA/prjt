@@ -23,27 +23,27 @@ if (isset($_POST['submit'])) {
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/home.css">
 </head>
 
-<body style="background-image:url(img/black.jpg); background-size: cover; height:100vh; overflow:hidden;">
+<body style="background-image:url(img/89.jpg); background-size: cover; overflow:hidden;">
   <!-- ///////// navbar//////////// -->
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #003580;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand mx-3" href="#" style="color:white; font-size:30px;  font-family: 'rubik', sans-serif;"><span style="color: #71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</a>
+        <a class="navbar-brand mx-3" href="#" style="font-family: 'rubik', sans-serif;"><span style="color: #71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a  href="<?php echo BASE_URL; ?>index" class="nav-link" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Home</a>
+              <a  href="<?php echo BASE_URL; ?>index" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3"  href="<?php echo BASE_URL; ?>profile" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Profile</a>
+              <a class="nav-link me-3"  href="<?php echo BASE_URL; ?>profile" style="font-family: 'rubik', sans-serif;">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3"  href="<?php echo BASE_URL; ?>contact" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Contact</a>
+              <a class="nav-link me-3"  href="<?php echo BASE_URL; ?>contact" style="font-family: 'rubik', sans-serif;">Contact</a>
             </li>
             <li class="nav-item">
-              <button class="nav-link rounded" style="color: white; background-color:#71a7ed; font-size:20px;  font-family: 'rubik', sans-serif;">Appointement</button>
+              <button class="nav-link rounded" style="color: white; background-color:#71a7ed;font-family: 'rubik', sans-serif;">Appointement</button>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <form method="POST">
+          <form method="POST fw-bold">
             <div class="mb-5">
               <input type="text" id="first_input" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First and Last Name" required style="color: white;">
             </div>
@@ -80,12 +80,12 @@ if (isset($_POST['submit'])) {
         <div class="col-1">
         </div>
         <div class="col-sm-5">
-          <h2 class="text-center" style="color: white;">Better health Care</h2>
+          <h2 class="text-center" style="color: #003580;">Better health Care</h2>
           <p class="mt-4" style="color:#7e91a0;">"Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industriescommon name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often ,"</p>
           <div class="mt-5">
-            <p style="color:#009ec5;"><i class="bi bi-geo-alt-fill" style="color: white;"></i> 756 Place, El Jadida.</p>
-            <p style="color:#009ec5;"><i class="bi bi-envelope-fill" style="color: white;"></i> gmail@exemple.com</p>
-            <p style="color:#009ec5;"><i class="bi bi-telephone-fill" style="color: white;"></i> +212 666378292</p>
+            <p style="color:#003580;"> <i class="bi bi-geo-alt-fill" style="color: white;"></i> 756 Place, El Jadida.</p>
+            <p style="color:#003580;"> <i class="bi bi-envelope-fill" style="color: white;"></i> gmail@exemple.com</p>
+            <p style="color:#003580;"> <i class="bi bi-telephone-fill" style="color: white;"></i> +212 666378292</p>
           </div>
           <div class="mt-5 mb-5">
             <i class="bi bi-facebook me-3" style="color:white;"></i>

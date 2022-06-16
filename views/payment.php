@@ -40,7 +40,7 @@ if (isset($_POST['find'])) {
             <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
+                        <a href="<?php echo BASE_URL; ?>dashbord" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="<?php echo BASE_URL; ?>home" class="nav-link" style="font-family: 'rubik', sans-serif;">List Patient</a>
@@ -50,7 +50,7 @@ if (isset($_POST['find'])) {
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link me-3" href="<?php echo BASE_URL; ?>contact" style="font-family: 'rubik', sans-serif;">Table Contact</a>
+                        <a class="nav-link me-3" href="<?php echo BASE_URL; ?>tablecontact" style="font-family: 'rubik', sans-serif;">Table Contact</a>
                     </li>
                     <li class="nav-item">
                         <button class="nav-link me-3 rounded" href="<?php echo BASE_URL; ?>payment" style="font-family: 'rubik', sans-serif; background-color:#71a7ed; color:white">Payment</button>
@@ -60,23 +60,26 @@ if (isset($_POST['find'])) {
         </div>
     </nav>
     <h1 class="text-center my-3"><span style="color:#0c96f1">'</span> Payment Des Malades <span style="color:#0c96f1">'</span></h1>
-    <a class="btn btn-sm btn-primary" href="<?php echo BASE_URL; ?>addpay">
-<i class="fas fa-plus"></i>
+    <a class="btn btn-sm btn-primary mx-2" href="<?php echo BASE_URL; ?>addpay">
+    <i class="bi bi-plus-circle"></i>
 <!-- pour retour lhome -->
 
-<a href="<?php echo BASE_URL;?>" class="btn btn-sm btn-secondary mx-2"><i class="fas fa-home"></i></a>
+<a href="<?php echo BASE_URL;?>dashbord" class="btn btn-sm btn-secondary mx-2">
+        <i class="bi bi-house-door"></i>
+</a>
 
 <?php
 include ('./views/includes/alerts.php');
 ?>
- <a href="<?php echo BASE_URL;?>logout" title="deconnexion" class="btn btn-sm btn-link mx-2"> <i class="fas fa-user mr-2"> <?php echo $_SESSION['name'];?></i></a>
+ <a href="<?php echo BASE_URL;?>logout" title="deconnexion" class="btn btn-sm btn-link mx-2"> <i class="fas fa-user"> <?php echo $_SESSION['name'];?></i></a>
 
-<form class="d-flex flex-row" style="float: right;" method="POST">
+<form class="d-flex flex-row mx-2" style="float: right;" method="POST">
     <input type="text" class="form-control" name="search" placeholder="recherche">
-    <button class="btn btn-info btn-sm" name="find" type="submit"><i class="fas fa-search"></i></button>
+    <button class="btn btn-info btn-sm" name="find" type="submit"><i class="fas fa-search mx-1 px-1"></i></button>
 </form>
 
-<table class="table my-5">
+<div style="width: 100%; overflow-x: auto;">
+<table class="table my-5 fw-bold" style="width: 100%; min-width: 500px;">
     <thead>
         <tr>
             <th scope="col">Name</th>
@@ -120,7 +123,7 @@ o bach it2aficha fe ga3 les pages include fe index -->
 
     </tbody>
 </table>
-
+</div>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

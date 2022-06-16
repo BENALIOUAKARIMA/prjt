@@ -40,20 +40,20 @@ if (isset($_POST['find'])) {
             <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
+                        <a  href="<?php echo BASE_URL; ?>dashbord" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="<?php echo BASE_URL; ?>home" class="nav-link" style="font-family: 'rubik', sans-serif;">List Patient</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-3" href="<?php echo BASE_URL; ?>contact" style="font-family: 'rubik', sans-serif;">List Contact</a>
+                        <a class="nav-link me-3" href="<?php echo BASE_URL; ?>tableappointement" style="font-family: 'rubik', sans-serif;">List appointement</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link me-3" href="<?php echo BASE_URL; ?>payment" style="font-family: 'rubik', sans-serif;"> List Payment</a>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link me-3 rounded" href="<?php echo BASE_URL; ?>tableappointement" style="font-family: 'rubik', sans-serif; background-color:#71a7ed; color:white">List appointement</button>
+                        <button class="nav-link me-3 rounded" href="<?php echo BASE_URL; ?>tablecontact" style="font-family: 'rubik', sans-serif; background-color:#71a7ed; color:white">List Contact</button>
                     </li>
                 </ul>
             </div>
@@ -64,19 +64,21 @@ if (isset($_POST['find'])) {
    
 <!-- pour retour lhome -->
 
-<a href="<?php echo BASE_URL;?>" class="btn btn-sm btn-secondary mx-2"><i class="fas fa-home"></i></a>
+<a href="<?php echo BASE_URL;?>dashbord" class="btn btn-sm btn-secondary mx-2">
+        <i class="bi bi-house-door"></i>
+</a>
 
 <?php
 include ('./views/includes/alerts.php');
 ?>
  <a href="<?php echo BASE_URL;?>logout" title="deconnexion" class="btn btn-sm btn-link mx-2"> <i class="fas fa-user mr-2"> <?php echo $_SESSION['name'];?></i></a>
 
-<form class="d-flex flex-row" style="float: right;" method="POST">
+<form class="d-flex flex-row mx-2" style="float: right;" method="POST">
     <input type="text" class="form-control" name="search" placeholder="recherche">
     <button class="btn btn-info btn-sm" name="find" type="submit"><i class="fas fa-search"></i></button>
 </form>
 
-<table class="table my-5">
+<table class="table my-5 fw-bold">
     <thead style="color:gray;">
         <tr>
             <th scope="col">first</th>
@@ -84,6 +86,7 @@ include ('./views/includes/alerts.php');
             <th scope="col">doctor</th>
             <th scope="col">Service</th>
             <th scope="col">message</th>
+            <th scope="col">Option</th>
         </tr>
     </thead>
     <tbody>
@@ -97,7 +100,13 @@ include ('./views/includes/alerts.php');
                 <td><?php echo $malade['doctor'];?></td>
                 <td><?php echo $malade['service'];?></td >
                 <td><?php echo $malade['message'];?></td>
-                <td class="d-flex flex-row"></td>
+                <td class="d-flex flex-row">
+                    <form method="POST" action="deletecomment">
+                                <!-- envoyer id de malade pour modifier et envoyer dans la page de modification -->
+                                <input type="hidden" name="id" value="<?php echo $malade['id']; ?>">
+                                <button class="btn btn-sm btn-danger mx-2"><i class="fa fa-trash"></i></button>
+                            </form>
+                </td>
             </tr>
 <?php
 }

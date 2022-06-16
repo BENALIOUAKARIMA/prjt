@@ -65,48 +65,48 @@
             </nav>
             <div class="row mx-3 mt-3">
                 <div class="col-md-3">
-                    <div class="card mb-2" style="background-color: white ;">
-                        <div><i class="bi bi-mortarboard ms-2 h2" style="color: #71a7ed;"></i></div>
-                        <div class="ms-2 mt-2">Patients</div>
+                    <div class="card mb-2 px-2" style="background-color: white ;">
+                        <div><i class="fa fa-ambulance h2 mt-3" style="color: #71a7ed;"></i></div>
+                        <div class="mt-3">Patients</div>
                         <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                 <div class="card mb-2" style="background-color: white; ">
-                        <div><i class="bi bi-currency-dollar ms-1 h2" style="color: #71a7ed;"></i></div>
-                        <div class="ms-2 mt-2">Payments</div>
+                        <div><i class="bi bi-coin ms-2 h1 mt-3" style="color: #71a7ed;"></i></div>
+                        <div class="ms-2 mt-4">Payments</div>
                         <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                 <div class="card mb-2" style="background-color:white;">
-                       <div><i class="bi bi-bookmark ms-2 h2 " style="color: #71a7ed;"></i></div>
-                       <div class="ms-2 mt-2">Course</div>
+                       <div><i class="fa fa-heartbeat ms-1 h1 my-3" style="color:#71a7ed;"></i></div>
+                       <div class="ms-2">Appointements</div>
                        <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
                     </div>
                 </div>
                 
                 <div class="col-md-3 mr-5">
                 <div class="card">
-                        <div><i class="bi bi-person ms-1 h2" style="color: #71a7ed;"></i></div>
-                        <div class="ms-2 mt-2 mr-3">Users</div>
+                        <div><i class="fas fa-comment-dots ms-1 h2 my-3" style="color:#71a7ed;"></i></div>
+                        <div class="ms-2 mt-2 mr-3">Contacts</div>
                         <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
                     </div>
                 </div>
             </div>
 
                 <div class="row my-5 mx-2">
-                    <h3 class="fs-4 mb-3">Recent Orders</h3>
+                    <h3 class="fs-4 mb-3">Recent</h3>
                     <div class="col">
                         <table class="table bg-white rounded shadow-sm  table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col" width="50">#</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Price</th>
+                                    <th scope="col">Patients</th>
+                                    <th scope="col">User</th>
+                                    <th scope="col">Payments</th>
                                 </tr>
                             </thead>
                             <tbody>

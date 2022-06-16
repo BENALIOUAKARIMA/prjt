@@ -53,33 +53,25 @@
               <div class="card-block text-center text-white">
                <i class="fas fa-user-tie fa-7x mt-5"></i>
                <h2 class="fw-bold mt-4"><?php echo $_SESSION['name'];?></h2>
-               <p>devloper web </p>
               </div>
              </div>
              <div class="col-sm-8 bg-white rounded-right">
                <h2 class="mt-3 text-center">Personal Information</h2>
                <hr class="badge-primary w-50 mx-auto">
                <div class="row">
-                   <div class="col-sm-6">
-                       <p class="fw-bold">name:</p>
-                       <h6 class="text-muted"><?php echo $_SESSION['name'];?></h6>
+                   <div class="col-sm-12">
+                       <p class="fw-bold text-center">name:</p>
+                       <h6 class="text-muted text-center"><?php echo $_SESSION['name'];?></h6>
                    </div>
-                   <div class="col-sm-6">
-                       <p class="fw-bold">Phone:</p>
-                       <h6 class="text-muted">+212 789654578</h6>
-                   </div>
+                
                </div>
-               <h4 class="mt-3">projects</h4>
                <hr class="bg-primary">
                <div class="row">
-               <div class="col-sm-6">
-                       <p class="fw-bold">Email:</p>
-                       <h6 class="text-muted">nick@gmail.com</h6>
+               <div class="col-sm-12">
+                       <p class="fw-bold text-center">Email:</p>
+                       <h6 class="text-muted text-center"><?php echo $_SESSION['email'];?></h6>
                    </div>
-                   <div class="col-sm-6">
-                       <p class="fw-bold">type:</p>
-                       <h6 class="text-muted">stomach</h6>
-                   </div>
+                 
                </div>
                <hr class="bg-primary">
                 <ul class="list-unstyled d-flex justify-content-center mt-4">

@@ -51,7 +51,19 @@ class ContactController{
             }
         }
     }
-    
+    public function deletemalade()
+    {
+        if (isset($_POST['id'])) {
+            $data['id'] = $_POST['id'];
+            $result = Contact::delete($data);
+            if ($result === 'ok') {
+                Session::set('success','the comment was deleted');
+                Redirect::to('tablecontact');
+            }else {
+                echo $result;
+            }
+        }
+    }
 
 }
 

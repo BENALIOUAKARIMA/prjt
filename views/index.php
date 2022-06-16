@@ -56,7 +56,7 @@
 
             <h1 style="color: #2c3e50 ; color:white; font-family: 'rubik', sans-serif;">Stay Safe, <span style="color: #71a7ed;">Stay</span> Healthly.</h1>
             <h1 style="color: #2c3e50;  color:white; font-family: 'rubik', sans-serif;">Caring For Your Life.</h1>
-            <a href="<?php echo BASE_URL; ?>register"><button type="button" class="btn" style="background-color: #0882ea; color:white; margin-top:20px;  font-family: 'rubik', sans-serif;">Get Started</button></a>
+            <a href="<?php echo BASE_URL; ?>register"><button type="button" class="btn" style="background-color: #71a7ed; color:white; margin-top:20px;  font-family: 'rubik', sans-serif;">Get Started</button></a>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
             <div class="card-body">
               <h5 class="card-title text-center"><i class="fa fa-ambulance"></i></h5>
               <p class="card-text fw-bold text-center" style="color: #003580;">Ambulace servises</p>
-              <p class="card-text text-center">means a service in which the patient’s condition requires medical transportation where the use of specialized medical skills and/or equipment is medically necessary and crucial to the safe transportation of the patient</p>
+              <p class="card-text text-center">means a service in which the patient’s condition requires medical transportation where the use of specialized medical skills and/or equipment is medically necessary and crucial to the safe transportation of the patient </p>
             </div>
           </div>
 
@@ -165,7 +165,7 @@
             <img src="img/81.jpg" alt="">
           </div>
           <div class="content">
-            <h2>card one</h2>
+            <h2>Dr. JOHN</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Illo cum accusamus unde officia quam,
               architecto atque nulla in sunt,
@@ -179,7 +179,7 @@
             <img src="img/ta2.jpg" alt="">
           </div>
           <div class="content">
-            <h2>card one</h2>
+            <h2>Dr. WILLIAM</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Illo cum accusamus unde officia quam,
               architecto atque nulla in sunt,
@@ -193,7 +193,7 @@
             <img src="img/ta3.jpg" alt="">
           </div>
           <div class="content">
-            <h2>card one</h2>
+            <h2>Dr. MARRY</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Illo cum accusamus unde officia quam,
               architecto atque nulla in sunt,
@@ -207,7 +207,7 @@
             <img src="img/assistante.jpg" alt="">
           </div>
           <div class="content">
-            <h2>card one</h2>
+            <h2>Dr. VICTORIA</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Illo cum accusamus unde officia quam,
               architecto atque nulla in sunt,
@@ -221,79 +221,20 @@
             <img src="img/big.jpg" alt="">
           </div>
           <div class="content">
-            <h2>card one</h2>
+            <h2>Dr. LINA</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Illo cum accusamus unde officia quam,
               architecto atque nulla in sunt,
               expedita doloremque consequuntur veritatis nemo!
               Natus sapiente ipsam vitae eius doloremque? </p>
-
           </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="img/doc.jpg" alt="">
-          </div>
-          <div class="content">
-            <h2>card one</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Illo cum accusamus unde officia quam,
-              architecto atque nulla in sunt,
-              expedita doloremque consequuntur veritatis nemo!
-              Natus sapiente ipsam vitae eius doloremque? </p>
-
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="img/doctor4.jpg" alt="">
-          </div>
-          <div class="content">
-            <h2>card one</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Illo cum accusamus unde officia quam,
-              architecto atque nulla in sunt,
-              expedita doloremque consequuntur veritatis nemo!
-              Natus sapiente ipsam vitae eius doloremque? </p>
-
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="img/doc3.jpg" alt="">
-          </div>
-          <div class="content">
-            <h2>card one</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Illo cum accusamus unde officia quam,
-              architecto atque nulla in sunt,
-              expedita doloremque consequuntur veritatis nemo!
-              Natus sapiente ipsam vitae eius doloremque? </p>
-
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="img/doctor-1.jpg" alt="">
-          </div>
-          <div class="content">
-            <h2>card two</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Illo cum accusamus unde officia quam,
-              architecto atque nulla in sunt,
-              expedita doloremque consequuntur veritatis nemo!
-              Natus sapiente ipsam vitae eius doloremque? </p>
-
-          </div>
-
         </div>
       </div>
     </div>
+    
   </section>
   <!-- ///////////////////////// team admin //////////////////////// -->
   <section style=" background: linear-gradient(-100deg,white 50%, #009ec5 50%); height: 70vh; font-size: poppins; height: 90vh;" id="post_2">
-    <!-- <h1 class="text-center" id="poste">Team</h1> -->
-
     <div class="container" id="poste">
       <div class="row">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -308,18 +249,18 @@
                   <div class="single-box">
                     <div class="img-area"><img src="img/t1.jpg" alt="" srcset=""></div>
                     <div class="img-text">
-                      <h2>person one</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                      <h2>Dr. Marry</h2>
+                      <p>General Doctor</p>
                     </div>
                   </div>
 
                 </div>
                 <div class="col-sm-4">
                   <div class="single-box">
-                    <div class="img-area"><img src="img/t2.jpg" alt="" srcset=""></div>
+                    <div class="img-area"><img src="img/t2.jpg" alt="photo"></div>
                     <div class="img-text">
-                      <h2>person two</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                      <h2>Dr. JOHN</h2>
+                      <p>Dermatologist</p>
                     </div>
                   </div>
 
@@ -328,8 +269,8 @@
                   <div class="single-box">
                     <div class="img-area"><img src="img/t3.jpg" alt="" srcset=""></div>
                     <div class="img-text">
-                      <h2>person three</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                      <h2>Dr. SANJAY</h2>
+                      <p>Hematology</p>
                     </div>
                   </div>
 
@@ -342,8 +283,8 @@
                   <div class="single-box">
                     <div class="img-area"><img src="img/t4.jpg" alt="" srcset=""></div>
                     <div class="img-text">
-                      <h2>person one</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                      <h2>Dr. WILLIAM</h2>
+                      <p>Dentist</p>
                     </div>
                   </div>
 
@@ -352,8 +293,8 @@
                   <div class="single-box">
                     <div class="img-area"><img src="img/t1.jpg" alt="" srcset=""></div>
                     <div class="img-text">
-                      <h2>person two</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                      <h2>Dr. Lina</h2>
+                      <p>Cosmetic doctor</p>
                     </div>
                   </div>
 
@@ -362,8 +303,8 @@
                   <div class="single-box">
                     <div class="img-area"><img src="img/t2.jpg" alt="" srcset=""></div>
                     <div class="img-text">
-                      <h2>person three</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat ea magni eos aliquam? Odio quas facilis nisi blanditiis possimus nemo animi dolore cupiditate atque. Vero totam accusantium ab soluta.</p>
+                      <h2>Dr. FREDERICK</h2>
+                      <p>Neurologist</p>
                     </div>
                   </div>
 

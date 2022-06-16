@@ -74,4 +74,18 @@ class Appoint
             echo 'error' . $ex->getMessage();
         }
     }
+    static public function delete($data)
+    {
+        $id = $data['id'];
+        try { // pour afficher error exact
+            $query = 'DELETE FROM appointement WHERE id=:id';
+            $stmt = DB::connect()->prepare($query); //preparer query
+            $stmt->execute(array(":id" => $id));
+            if ($stmt->execute()) {
+                return 'ok';
+            }
+        } catch (PDOException $ex) { // le cas d'erreur
+            echo 'error' . $ex->getMessage();
+        }
+    }
 }

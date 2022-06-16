@@ -66,11 +66,25 @@ class Contact
     {
         $search = $data['search'];
         try { // pour afficher error exact
-            $query = 'SELECT * FROM contacts WHERE name LIKE ?';
+            $query = 'SELECT * FROM contacts WHERE first LIKE ?';
             $stmt = DB::connect()->prepare($query); //preparer query
             $stmt->execute(array('%' . $search . '%'));
             $malades = $stmt->fetchAll();
             return $malades;
+        } catch (PDOException $ex) { // le cas d'erreur
+            echo 'error' . $ex->getMessage();
+        }
+    }
+    static public function delete($data)
+    {
+        $id = $data['id'];
+        try { // pour afficher error exact
+            $query = 'DELETE FROM contacts WHERE id=:id';
+            $stmt = DB::connect()->prepare($query); //preparer query
+            $stmt->execute(array(":id" => $id));
+            if ($stmt->execute()) {
+                return 'ok';
+            }
         } catch (PDOException $ex) { // le cas d'erreur
             echo 'error' . $ex->getMessage();
         }

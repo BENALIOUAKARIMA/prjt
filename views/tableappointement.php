@@ -29,7 +29,7 @@ if (isset($_POST['find'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body style="background-image:url(img/pat.jpg); background-size: cover; background-attachment: fixed;">
+<body style="background-image:url(img/olya.jpg); background-size: cover; background-attachment: fixed;">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -40,13 +40,13 @@ if (isset($_POST['find'])) {
             <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
+                        <a href="<?php echo BASE_URL; ?>dashbord" class="nav-link" style="font-family: 'rubik', sans-serif;">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="<?php echo BASE_URL; ?>home" class="nav-link" style="font-family: 'rubik', sans-serif;">List Patient</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-3" href="<?php echo BASE_URL; ?>contact" style="font-family: 'rubik', sans-serif;">List Contact</a>
+                        <a class="nav-link me-3" href="<?php echo BASE_URL; ?>tablecontact" style="font-family: 'rubik', sans-serif;">Table Contact</a>
                     </li>
 
                     <li class="nav-item">
@@ -64,7 +64,9 @@ if (isset($_POST['find'])) {
    
 <!-- pour retour lhome -->
 
-<a href="<?php echo BASE_URL;?>" class="btn btn-sm btn-secondary mx-2"><i class="fas fa-home"></i></a>
+<a href="<?php echo BASE_URL;?>dashbord" class="btn btn-sm btn-secondary mx-2"> 
+       <i class="bi bi-house-door"></i>
+</a>
 
 <?php
 include ('./views/includes/alerts.php');
@@ -76,13 +78,14 @@ include ('./views/includes/alerts.php');
     <button class="btn btn-info btn-sm" name="find" type="submit"><i class="fas fa-search"></i></button>
 </form>
 
-<table class="table my-5">
+<div style="width: 100%; overflow-x: auto;">
+<table class="table my-5 fw-bold" style="width: 100%; min-width: 500px;">
     <thead style="color:gray;">
         <tr>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">Phone</th>
-            <th scope="col">Service</th>
+            <th scope="col">Doctor</th>
             <th scope="col">Date</th>
             <th scope="col">Action</th>
         </tr>
@@ -104,7 +107,11 @@ include ('./views/includes/alerts.php');
                         <input type="hidden" name="id" value="<?php echo $malade['id'];?>"> 
                         <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i></button>
                     </form>
-                   
+                    <form method="POST" action="deleteappointement">
+                                <!-- envoyer id de malade pour modifier et envoyer dans la page de modification -->
+                                <input type="hidden" name="id" value="<?php echo $malade['id']; ?>">
+                                <button class="btn btn-sm btn-danger mx-2"><i class="fa fa-trash"></i></button>
+                            </form>
                 </td>
             </tr>
 <?php
@@ -116,7 +123,7 @@ o bach it2aficha fe ga3 les pages include fe index -->
 
     </tbody>
 </table>
-
+</div>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

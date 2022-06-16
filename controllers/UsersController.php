@@ -12,6 +12,7 @@ public $role;
       if ($result->email === $_POST['email'] && $result->password === $_POST['password']) {
         $_SESSION['logged'] = true;
         $_SESSION['name'] = $result->name;
+        $_SESSION['email'] = $result->email;
         if ($this->role=='admin') {
           header('location:dashbord');
       }

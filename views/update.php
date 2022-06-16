@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
         <div class="col-md-8 mx-auto">
             <div class="card">
                 <div class="card-body bg-light">
-                    <a href="<?php echo BASE_URL; ?>" class="btn btn-sm btn-secondary mr-2 mb-2">
+                    <a href="<?php echo BASE_URL; ?>home" class="btn btn-sm btn-secondary mr-2 mb-2">
                         <i class="fas fa-home"></i>
                     </a>
                     <form method="POST">
