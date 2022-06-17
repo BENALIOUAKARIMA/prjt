@@ -1,3 +1,13 @@
+<?php
+if (isset($_POST['find'])) {
+    $data = new MaladeController();
+    $malades = $data->findMalades();
+} else {
+    $data = new MaladeController();
+    $malades = $data->getAllMalades();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,21 +26,14 @@
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
-                    class="fas fa-user-secret me-2"></i> <?php echo $_SESSION['name']; ?></div>
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i class="fas fa-user-secret me-2"></i> <?php echo $_SESSION['name']; ?></div>
             <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active text-center"><i
-                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="<?php echo BASE_URL; ?>home" class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-center"><i
-                        class="fas fa-project-diagram me-2"></i>Patients</a>
-                <a href="<?php echo BASE_URL; ?>payment" class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-center"><i
-                        class="fas fa-chart-line me-2"></i>Payments</a>
-                <a href="<?php echo BASE_URL; ?>tableappointement" class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-center"><i
-                        class="fas fa-comment-dots me-2"></i>Appointement</a>
-                <a href="<?php echo BASE_URL; ?>tablecontact" class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-center"><i
-                        class="fas fa-map-marker-alt me-2"></i>Contact</a>
-                <a href="<?php echo BASE_URL; ?>logout" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold text-center"><i
-                        class="fas fa-power-off me-2"></i>Logout</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active text-center"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+                <a href="<?php echo BASE_URL; ?>home" class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-center"><i class="fas fa-project-diagram me-2"></i>Patients</a>
+                <a href="<?php echo BASE_URL; ?>payment" class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-center"><i class="fas fa-chart-line me-2"></i>Payments</a>
+                <a href="<?php echo BASE_URL; ?>tableappointement" class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-center"><i class="fas fa-comment-dots me-2"></i>Appointement</a>
+                <a href="<?php echo BASE_URL; ?>tablecontact" class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-center"><i class="fas fa-map-marker-alt me-2"></i>Contact</a>
+                <a href="<?php echo BASE_URL; ?>logout" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold text-center"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
 
@@ -43,17 +46,14 @@
                     <h2 class="fs-2 m-0">Dashboard</h2>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-user me-2"></i><?php echo $_SESSION['name']; ?>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="col-md-3">
-                <div class="card mb-2" style="background-color: white; ">
+                    <div class="card mb-2" style="background-color: white; ">
                         <div><i class="bi bi-coin ms-2 h1 mt-3" style="color: #71a7ed;"></i></div>
                         <div class="ms-2 mt-4">Payments</div>
                         <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
@@ -81,15 +81,15 @@
                 </div>
 
                 <div class="col-md-3">
-                <div class="card mb-2" style="background-color:white;">
-                       <div><i class="fa fa-heartbeat ms-1 h1 my-3" style="color:#71a7ed;"></i></div>
-                       <div class="ms-2">Appointements</div>
-                       <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
+                    <div class="card mb-2" style="background-color:white;">
+                        <div><i class="fa fa-heartbeat ms-1 h1 my-3" style="color:#71a7ed;"></i></div>
+                        <div class="ms-2">Appointements</div>
+                        <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
                     </div>
                 </div>
-                
+
                 <div class="col-md-3 mr-5">
-                <div class="card">
+                    <div class="card">
                         <div><i class="fas fa-comment-dots ms-1 h2 my-3" style="color:#71a7ed;"></i></div>
                         <div class="ms-2 mt-2 mr-3">Contacts</div>
                         <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
@@ -97,110 +97,52 @@
                 </div>
             </div>
 
-                <div class="row my-5 mx-2">
-                    <h3 class="fs-4 mb-3">Recent</h3>
-                    <div class="col">
-                        <table class="table bg-white rounded shadow-sm  table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col" width="50">#</th>
-                                    <th scope="col">Patients</th>
-                                    <th scope="col">User</th>
-                                    <th scope="col">Payments</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Television</td>
-                                    <td>Jonny</td>
-                                    <td>$1200</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Laptop</td>
-                                    <td>Kenny</td>
-                                    <td>$750</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Cell Phone</td>
-                                    <td>Jenny</td>
-                                    <td>$600</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Fridge</td>
-                                    <td>Killy</td>
-                                    <td>$300</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Books</td>
-                                    <td>Filly</td>
-                                    <td>$120</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Gold</td>
-                                    <td>Bumbo</td>
-                                    <td>$1800</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>Pen</td>
-                                    <td>Bilbo</td>
-                                    <td>$75</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>Notebook</td>
-                                    <td>Frodo</td>
-                                    <td>$36</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">9</th>
-                                    <td>Dress</td>
-                                    <td>Kimo</td>
-                                    <td>$255</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">10</th>
-                                    <td>Paint</td>
-                                    <td>Zico</td>
-                                    <td>$434</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Carpet</td>
-                                    <td>Jeco</td>
-                                    <td>$1236</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">12</th>
-                                    <td>Food</td>
-                                    <td>Haso</td>
-                                    <td>$422</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+            <div class="row my-5 mx-2">
+                <h3 class="fs-4 mb-3">Recent</h3>
+                <div class="col">
+                    <table class="table bg-white rounded shadow-sm  table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-            </div> 
+                            <?php
+                            foreach ($malades as $malade) {
+                            ?>
+                                <tr>
+                                    <th scope="row"><?php echo $malade['name']; ?></th>
+                                    <td><?php echo $malade['email']; ?></td>
+                                    <td><?php echo $malade['phone']; ?></td>
+                                    <td><?php echo $malade['type']; ?></td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </div>
     </div>
+    </div>
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         var el = document.getElementById("wrapper");
         var toggleButton = document.getElementById("menu-toggle");
 
-        toggleButton.onclick = function () {
+        toggleButton.onclick = function() {
             el.classList.toggle("toggled");
         };
-    </script> 
+    </script>
 </body>
 
 </html>

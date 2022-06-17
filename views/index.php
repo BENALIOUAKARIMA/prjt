@@ -64,7 +64,7 @@
 
   </div>
 
-
+<!-- //////////////// About //////////////////// -->
   <section id="about">
     <div class="text-center">
       <h1 class="pt-5" style="color:#009ec5; font-family: 'rubik', sans-serif;" id="about">About</h1>
@@ -76,7 +76,7 @@
             <div class="card-body">
               <h5 class="card-title text-center"><i class="fa fa-ambulance"></i></h5>
               <p class="card-text fw-bold text-center" style="color: #003580;">Ambulace servises</p>
-              <p class="card-text text-center">means a service in which the patient’s condition requires medical transportation where the use of specialized medical skills and/or equipment is medically necessary and crucial to the safe transportation of the patient </p>
+              <p class="card-text text-center">means a service in which the patient’s condition requires medical transportation where the use of specialized medical skills and/or equipment is medically necessary and crucial to the safe transportation of the patient  and crucial to the safe transportation of the patient </p>
             </div>
           </div>
 
@@ -95,7 +95,7 @@
             <div class="card-body">
               <h5 class="card-title text-center"><i class="fa fa-stethoscope"></i></h5>
               <div class="card-text fw-bold text-center mb-3" style="color: #003580;">Free Checkups</div>
-              <p class="card-text text-center">After a first crucial part of the interrogation, the doctor examines the patient, then formulates his conclusion. The clinical examination depends on the patient's complaint, as well as the abnormalities noted during the questionnaire</p>
+              <p class="card-text text-center">After a first crucial part of the interrogation, the doctor examines the patient, then formulates his conclusion. The clinical examination depends on the patient's complaint, as well as the abnormalities noted during the questionnaire the abnormalities noted during the questionnaire</p>
             </div>
           </div>
         </div>
