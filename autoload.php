@@ -16,7 +16,7 @@ function autoload($class_name)
     );
     
     $parts = explode('\\',$class_name);
-    $name = array_pop($parts);  // delete last element 
+    $name = array_pop($parts);  // delete dernier element 
     foreach ($array_paths as $path) {
         $file = sprintf($path. '%s.php', $name); // le nom de fichier c'est le meme nom des classes
         if (is_file($file)) {
