@@ -6,7 +6,7 @@ class Malade
     {
         $stmt = DB::connect()->prepare('SELECT * FROM liste');
         $stmt->execute();
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(); //fetch:array
         $stmt = null;
     }
 

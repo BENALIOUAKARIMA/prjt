@@ -18,7 +18,7 @@ class Payment
             $stmt = DB::connect()->prepare($query); //preparer query
             $stmt->execute(array(":id" => $id));
             $malade = $stmt->fetch(PDO::FETCH_OBJ); //recuperer sous forme d'un obj
-            return $malade;
+            return $malade; // katjib liya wahed requet mn base de donner ya3ni array
         } catch (PDOException $ex) { // le cas d'erreur
             echo 'error' . $ex->getMessage();
         }

@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['submit'])) {
-    $creatUser = new AppController();
+    $creatUser = new AppointementController();
     $creatUser->Appointement();
 }
 ?>
@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <form method="POST fw-bold">
+          <form method="POST">
             <div class="mb-5">
               <input type="text" id="first_input" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First and Last Name" required style="color: white;">
             </div>
@@ -99,12 +99,6 @@ if (isset($_POST['submit'])) {
     </div>
   </section>
 
-  <!-- ///////////////////////////////////footer//////////////////////////////////// -->
-
-  <footer style="background-color:#052149;">
-    <h1 class="text-center py-3" style="color: white;"><span style="color:#71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</h1>
-    <p class="text-center mb-0" style="color: white; padding-bottom: 60px;">© 2022 healthcare. All rights reserved | Design by healthcare</p>
-  </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>

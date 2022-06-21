@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['submit'])) {
-    $creatUser = new ConController();
+    $creatUser = new ContactController();
     $creatUser->Contact();
 }
 ?>

@@ -6,6 +6,21 @@ if (isset($_POST['find'])) {
     $data = new MaladeController();
     $malades = $data->getAllMalades();
 }
+$data = new PaymentController();
+$pay = $data->getAllpay();
+$payments=count($pay);
+
+$data = new MaladeController();
+$pat = $data->getAllMalades();
+$patients=count($pat);
+
+$data = new AppointementController();
+$App = $data->getAllAppointement();
+$appointements=count($App);
+
+$data = new ContactController();
+$Con = $data->getAllContact();
+$contacts=count($Con);
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +41,7 @@ if (isset($_POST['find'])) {
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i class="fas fa-user-secret me-2"></i> <?php echo $_SESSION['name']; ?></div>
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i class="fas fa-user-secret me-2"></i>Welcome <?php echo $_SESSION['name']; ?></div>
             <div class="list-group list-group-flush my-3">
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active text-center"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
                 <a href="<?php echo BASE_URL; ?>home" class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-center"><i class="fas fa-project-diagram me-2"></i>Patients</a>
@@ -52,13 +67,10 @@ if (isset($_POST['find'])) {
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
+                        <li>
                             <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user me-2"></i><?php echo $_SESSION['name']; ?>
+                                <i class="fas fa-user me-2"></i><?php echo $_SESSION['email']; ?>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>logout">Logout</a></li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -68,7 +80,7 @@ if (isset($_POST['find'])) {
                     <div class="card mb-2 px-2" style="background-color: white ;">
                         <div><i class="fa fa-ambulance h2 mt-3" style="color: #71a7ed;"></i></div>
                         <div class="mt-3">Patients</div>
-                        <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
+                        <p style="text-align: right;" class="px-2 mt-2 fw-bold text-secondary"><?php echo $patients;?></p>
                     </div>
                 </div>
 
@@ -76,7 +88,7 @@ if (isset($_POST['find'])) {
                     <div class="card mb-2" style="background-color: white; ">
                         <div><i class="bi bi-coin ms-2 h1 mt-3" style="color: #71a7ed;"></i></div>
                         <div class="ms-2 mt-4">Payments</div>
-                        <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
+                        <p style="text-align: right;" class="px-2 mt-2 fw-bold text-secondary"><?php echo $payments;?></p>
                     </div>
                 </div>
 
@@ -84,7 +96,7 @@ if (isset($_POST['find'])) {
                     <div class="card mb-2" style="background-color:white;">
                         <div><i class="fa fa-heartbeat ms-1 h1 my-3" style="color:#71a7ed;"></i></div>
                         <div class="ms-2">Appointements</div>
-                        <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
+                        <p style="text-align: right;" class="px-2 mt-2 fw-bold text-secondary"><?php echo $appointements;?></p>
                     </div>
                 </div>
 
@@ -92,15 +104,15 @@ if (isset($_POST['find'])) {
                     <div class="card">
                         <div><i class="fas fa-comment-dots ms-1 h2 my-3" style="color:#71a7ed;"></i></div>
                         <div class="ms-2 mt-2 mr-3">Contacts</div>
-                        <p style="text-align: right;" class="px-2 mt-2 fw-bold"></p>
+                        <p style="text-align: right;" class="px-2 mt-2 fw-bold text-secondary"><?php echo $contacts;?></p>
                     </div>
                 </div>
             </div>
 
             <div class="row my-5 mx-2">
-                <h3 class="fs-4 mb-3">Recent</h3>
-                <div class="col">
-                    <table class="table bg-white rounded shadow-sm  table-hover">
+                <h3 class="fs-4 mb-3">Recent Patients</h3>
+                <div class="col" style="width: 100%; overflow-x: auto;">
+                    <table class="table bg-white rounded shadow-sm  table-hover" style="width: 100%; min-width: 500px;">
                         <thead>
                             <tr>
                                 <th scope="col">Name</th>
@@ -115,7 +127,7 @@ if (isset($_POST['find'])) {
                             foreach ($malades as $malade) {
                             ?>
                                 <tr>
-                                    <th scope="row"><?php echo $malade['name']; ?></th>
+                                    <th><?php echo $malade['name']; ?></th>
                                     <td><?php echo $malade['email']; ?></td>
                                     <td><?php echo $malade['phone']; ?></td>
                                     <td><?php echo $malade['type']; ?></td>
