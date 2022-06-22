@@ -79,7 +79,7 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="col-1">
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-5 d-sm-block d-none">
           <h2 class="text-center" style="color: white;">Better health Care</h2>
           <p class="mt-4" style="color:#7e91a0;">"Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industriescommon name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industries Lorem Ipsum"is the common name dummy text often ,"</p>
           <div class="mt-5">
