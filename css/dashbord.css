@@ -22,14 +22,7 @@
   
   #wrapper {
     overflow-x: hidden;
-    background-image: linear-gradient(
-      to right,
-      #71a7ed,
-      #71a7ed,
-      #71a7ed,
-      #71a7ed,
-      #71a7ed
-    );
+    background-color: #71a7ed;
   }
   
   #sidebar-wrapper {

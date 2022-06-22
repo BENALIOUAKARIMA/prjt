@@ -50,7 +50,6 @@ if (isset($_POST['submit'])) {
             <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" style="background: transparent;" required>
             <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" style="background: transparent;" required>
             <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter your Confirmation" style="background: transparent;" required>
-            
             <button type="submit" id="button" name="submit" class="btn btn-info mt-4 w-100" style=" font: size 20px;">SignUp <i class="bi bi-box-arrow-in-right"></i></button>
             <hr>
             <div class="mx-5 fw-bold">Have an acount?! <a class="fw-bold" href="<?php echo BASE_URL; ?>login" class="btn btn-link" style="color:#96cff5; text-decoration:none;">Login Here</a></div>
