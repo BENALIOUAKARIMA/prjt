@@ -1,6 +1,4 @@
 <?php
-// $data = new MaladeController();
-
 // // cree objt mn class maladecontroller 
 
 // $malades = $data->getAllMalades(); // recuperer les malades

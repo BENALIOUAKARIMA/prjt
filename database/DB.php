@@ -1,4 +1,4 @@
-<?php //PDO
+<?php
 
 
 class DB

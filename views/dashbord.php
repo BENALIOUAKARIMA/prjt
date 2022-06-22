@@ -65,7 +65,7 @@ $contacts=count($Con);
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li>
                             <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,7 +73,7 @@ $contacts=count($Con);
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </nav>
             <div class="row mx-3 mt-3">
                 <div class="col-md-3">
@@ -146,7 +146,6 @@ $contacts=count($Con);
     </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         var el = document.getElementById("wrapper");
         var toggleButton = document.getElementById("menu-toggle");
@@ -158,3 +157,4 @@ $contacts=count($Con);
 </body>
 
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>

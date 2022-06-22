@@ -2,7 +2,6 @@
 if (isset($_POST['submit'])) { //pour add
      
 $newMalade = new MaladeController();
-// cree objt mn class maladecontroller 
 $newMalade->addMalade(); // recuperer les malades
 } 
 ?>

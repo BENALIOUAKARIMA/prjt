@@ -13,7 +13,7 @@ if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
             $page = $_GET['page'];
             $home->index($page);
         } else {
-            include('views/includes/404.php');
+        include('views/includes/404.php');
         }
     } else {
         $home->index('index');
