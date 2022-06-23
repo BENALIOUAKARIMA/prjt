@@ -23,11 +23,11 @@ if (isset($_POST['submit'])) {
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/home.css">
 </head>
 
-<body style="background-image:url(img/k.jpg); background-size: cover; height:100vh; overflow:hidden;">
+<body style="background-image:url(img/k.jpg); background-size: cover;">
   <!-- ///////// navbar//////////// -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #003580;">
       <div class="container-fluid">
-        <a class="navbar-brand mx-3" href="#" style="color:white; font-size:30px;  font-family: 'rubik', sans-serif;"><span style="color: #71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</a>
+        <a class="navbar-brand mx-3"  href="<?php echo BASE_URL; ?>logout" style="color:white; font-size:30px;  font-family: 'rubik', sans-serif;"><span style="color: #71a7ed;">H</span>ealth<span style="color:#71a7ed;">C</span>are</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

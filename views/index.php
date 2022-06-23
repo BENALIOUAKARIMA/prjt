@@ -37,7 +37,7 @@
               <a class="nav-link me-3" href="#service" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3" href="#poste" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Poste</a>
+              <a class="nav-link me-3" href="#doctor" style="color: white; font-size:20px;  font-family: 'rubik', sans-serif;">Poste</a>
             </li>
 
             <li class="nav-item">
@@ -157,7 +157,7 @@
   </section>
   <!-- ////////////////// Doctor ///////////////// -->
   <section style="background-color: #009ec5; display: none;" id="post_1">
-    <h1 class="text-center pt-5" style="color:#fff;" id="poste">DOCTOR</h1>
+    <h1 class="text-center pt-5" style="color:#fff;" id="doctor">DOCTOR</h1>
     <div id="team">
       <div class="container" id="con">
         <div class="card">
@@ -235,7 +235,7 @@
   </section>
   <!-- ///////////////////////// team admin //////////////////////// -->
   <section style=" background: linear-gradient(-100deg,white 50%, #009ec5 50%); height: 70vh; font-size: poppins; height: 90vh;" id="post_2">
-    <div class="container" id="poste">
+    <div class="container">
       <div class="row">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">

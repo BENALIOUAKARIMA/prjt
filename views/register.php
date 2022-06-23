@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
             <div class="collapse navbar-collapse float-end" style="flex-direction: row-reverse;" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" style="margin-right:40px ;" href="<?php echo BASE_URL; ?>login">LogIn</a>
+                        <a class="nav-link active" style="margin-right:40px ;" href="<?php echo BASE_URL; ?>index">Reception</a>
                     </li>
                 </ul>
             </div>

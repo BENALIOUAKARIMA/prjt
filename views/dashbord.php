@@ -64,6 +64,7 @@ $contacts=count($Con);
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
             </nav>
             <div class="row mx-3 mt-3">
                 <div class="col-md-3">
@@ -137,11 +138,11 @@ $contacts=count($Con);
     </div>
 
     <script>
-        var el = document.getElementById("wrapper");
-        var toggleButton = document.getElementById("menu-toggle");
+        var sidbar = document.getElementById("wrapper"); // sidbar
+        var toggleButton = document.getElementById("menu-toggle"); // button de sidbar
 
         toggleButton.onclick = function() {
-            el.classList.toggle("toggled");
+            sidbar.classList.toggle("toggled"); // supprimer or afficher sidebar
         };
     </script>
 </body>
